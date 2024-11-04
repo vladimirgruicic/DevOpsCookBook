@@ -35,3 +35,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io || handle_error "F
 
 echo "Docker installation complete!"
 docker --version
+
+# Test Docker installation by running a hello-world container
+echo "Testing Docker installation with hello-world container..."
+sudo docker run hello-world || handle_error "Failed to run the hello-world container."

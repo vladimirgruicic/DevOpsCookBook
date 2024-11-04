@@ -23,7 +23,8 @@ DevOpsCookbook/
 │   ├── install_docker.sh
 │   ├── configure_docker.sh
 │   ├── create_docker_container.sh
-│   └── docker_cleanup.sh
+│   ├── docker_setup.sh  # Main setup script for Docker
+│   └── image_list.txt
 ├── MonitoringAndPerformance/
 │   ├── README.md
 │   ├── SystemMonitoring/
@@ -41,8 +42,11 @@ DevOpsCookbook/
 │       ├── README.md
 │       ├── system_tuning.sh
 │       └── application_tuning.sh
-└── AutomationAndConfigurationManagement/
-    ├── README.md
-    ├── install_salt.sh
-    ├── install_terraform.sh
-    └── cron_job_setup.sh
+├── AutomationAndConfigurationManagement/
+│   ├── README.md
+│   ├── install_salt.sh
+│   ├── install_terraform.sh
+│   └── cron_job_setup.sh
+├── main_setup.sh  # Main script to start the overall setup
+└── make_scripts_executable.sh  # Script to make all scripts executable
+└── directory_structure.txt
