@@ -7,81 +7,52 @@ BASE_DIR="$(pwd)"
 # Path to the image list file
 IMAGE_LIST_FILE="$BASE_DIR/DockerSetup/image_list.txt"
 
-# Path to the keep_alive script
-KEEP_ALIVE_SCRIPT="$BASE_DIR/DockerSetup/keep_alive.sh"
-
-# Debugging: Print the paths being checked
-echo "Checking for image list file at: $IMAGE_LIST_FILE"
-echo "Checking for keep alive script at: $KEEP_ALIVE_SCRIPT"
-
 # Check if the image list file exists
 if [ ! -f "$IMAGE_LIST_FILE" ]; then
-  echo "Image list file not found at $IMAGE_LIST_FILE!"
+  echo "Error: Image list file not found at $IMAGE_LIST_FILE!"
   exit 1
 fi
 
-# Check if the keep_alive script exists
-if [ ! -f "$KEEP_ALIVE_SCRIPT" ]; then
-  echo "Keep alive script not found at $KEEP_ALIVE_SCRIPT!"
-  exit 1
-fi
-
-# Debugging: Check if the image list file is empty
-if [ ! -s "$IMAGE_LIST_FILE" ]; then
-  echo "Image list file is empty at $IMAGE_LIST_FILE!"
-  exit 1
-fi
-
-# Print the contents of the image list file for debugging
-echo "Contents of image_list.txt:"
-cat "$IMAGE_LIST_FILE"
+# Initialize a variable to track if any containers were created
+CONTAINER_CREATED=false
 
 # Loop through each image name in the image list
-while IFS= read -r IMAGE_NAME; do
-  # Trim whitespace from the image name
-  IMAGE_NAME=$(echo "$IMAGE_NAME" | xargs)
+while IFS= read -r IMAGE_NAME || [ -n "$IMAGE_NAME" ]; do
+  # Remove any trailing whitespace or carriage return characters
+  IMAGE_NAME=$(echo "$IMAGE_NAME" | tr -d '\r' | xargs)
 
-  # Check if the image name is empty
+  # Skip empty lines
   if [ -z "$IMAGE_NAME" ]; then
-    echo "Skipping empty line."
-    continue
-  fi
-
-  # Check if the image already exists in Docker
-  if docker images --format '{{.Repository}}:{{.Tag}}' | grep -q "^$IMAGE_NAME$"; then
-    echo "Image '$IMAGE_NAME' already exists in Docker. Skipping."
-    continue
-  fi
-
-  # Check if the image is listed in image_list.txt
-  if ! grep -q "^$IMAGE_NAME$" "$IMAGE_LIST_FILE"; then
-    echo "Image '$IMAGE_NAME' is not listed in $IMAGE_LIST_FILE. Skipping."
+    echo "Warning: Skipping empty line in image list."
     continue
   fi
 
   echo "Pulling Docker image: $IMAGE_NAME..."
-  docker pull "$IMAGE_NAME"
+  
+  # Pull the Docker image and check for errors
+  if ! docker pull "$IMAGE_NAME"; then
+    echo "Error: Failed to pull Docker image: $IMAGE_NAME"
+    continue
+  fi
   
   echo "Creating and running container from image: $IMAGE_NAME..."
-
-  # Run the container and ensure keep_alive.sh runs and keeps the container alive
-  CONTAINER_ID=$(docker run -d "$IMAGE_NAME" /bin/sh -c "/keep_alive.sh; tail -f /dev/null")
   
-  echo "Container created and running with image: $IMAGE_NAME. Container ID: $CONTAINER_ID."
-
-  # Wait a few seconds to allow the keep_alive script to start
-  sleep 5
-  
-  # Check if the keep_alive_status.txt file exists in the container
-  if docker exec "$CONTAINER_ID" test -f /tmp/keep_alive_status.txt; then
-    echo "Keep alive script is running inside the container."
-  else
-    echo "Keep alive script did not run inside the container."
+  # Create and run the Docker container
+  if ! docker run -d "$IMAGE_NAME"; then
+    echo "Error: Failed to create and run container from image: $IMAGE_NAME"
+    continue
   fi
+  
+  echo "Container created and running with image: $IMAGE_NAME."
+  CONTAINER_CREATED=true
 done < "$IMAGE_LIST_FILE"
 
 # List all running containers
 echo "Listing all running Docker containers:"
-docker ps
+if [ "$CONTAINER_CREATED" = true ]; then
+  docker ps
+else
+  echo "No containers were created."
+fi
 
-echo "All containers have been created successfully."
+echo "Docker setup completed successfully."

@@ -32,3 +32,354 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        
 b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   6 minutes ago   Up 6 minutes             elegant_edison
 28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   6 minutes ago   Up 6 minutes             agitated_bouman
 All containers have been created successfully.
+Checking for image list file at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt
+Checking for keep alive script at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/keep_alive.sh
+Contents of image_list.txt:
+alpine
+nginxPulling Docker image: alpine...
+invalid reference format
+Creating and running container from image: alpine...
+docker: invalid reference format.
+See 'docker run --help'.
+Container created and running with image: alpine. Container ID: .
+Error: No such container: 
+Keep alive script did not run inside the container.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   37 minutes ago   Up 37 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   38 minutes ago   Up 38 minutes             agitated_bouman
+All containers have been created successfully.
+Checking for image list file at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt
+Checking for keep alive script at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/keep_alive.sh
+Contents of image_list.txt:
+alpine
+nginxPulling Docker image: alpine...
+invalid reference format
+Creating and running container from image: alpine...
+docker: invalid reference format.
+See 'docker run --help'.
+Container created and running with image: alpine. Container ID: .
+Error: No such container: 
+Keep alive script did not run inside the container.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   39 minutes ago   Up 39 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   40 minutes ago   Up 40 minutes             agitated_bouman
+All containers have been created successfully.
+Checking for image list file at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt
+Checking for keep alive script at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/keep_alive.sh
+Contents of image_list.txt:
+alpine
+ubuntuPulling Docker image: alpine...
+invalid reference format
+Creating and running container from image: alpine...
+docker: invalid reference format.
+See 'docker run --help'.
+Container created and running with image: alpine. Container ID: .
+Error: No such container: 
+Keep alive script did not run inside the container.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   41 minutes ago   Up 41 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   42 minutes ago   Up 42 minutes             agitated_bouman
+All containers have been created successfully.
+Invalid image name format: 'alpine'. Skipping.
+All running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   42 minutes ago   Up 42 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   43 minutes ago   Up 43 minutes             agitated_bouman
+Invalid image name format: 'alpine'. Skipping.
+All running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   43 minutes ago   Up 43 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   44 minutes ago   Up 44 minutes             agitated_bouman
+Processing image name: 'alpine'
+Invalid image name format: 'alpine'. Skipping.
+Processing image name: 'nginx'
+Invalid image name format: 'nginx'. Skipping.
+Processing image name: 'mysql:latest'
+Invalid image name format: 'mysql:latest'. Skipping.
+Processing image name: 'redis'
+Invalid image name format: 'redis'. Skipping.
+All running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   45 minutes ago   Up 45 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   46 minutes ago   Up 46 minutes             agitated_bouman
+Pulling Docker image: alpine...
+invalid reference format
+Error: Failed to pull Docker image: alpine
+Pulling Docker image: nginx...
+invalid reference format
+Error: Failed to pull Docker image: nginx
+Pulling Docker image: mysql:latest...
+invalid reference format
+Error: Failed to pull Docker image: mysql:latest
+Pulling Docker image: redis...
+invalid reference format
+Error: Failed to pull Docker image: redis
+Pulling Docker image: python:3.8-slim...
+3.8-slim: Pulling from library/python
+302e3ee49805: Pulling fs layer
+030d7bdc20a6: Pulling fs layer
+a3f1dfe736c5: Pulling fs layer
+3971691a3637: Pulling fs layer
+3971691a3637: Waiting
+030d7bdc20a6: Verifying Checksum
+030d7bdc20a6: Download complete
+a3f1dfe736c5: Download complete
+3971691a3637: Download complete
+302e3ee49805: Verifying Checksum
+302e3ee49805: Download complete
+302e3ee49805: Pull complete
+030d7bdc20a6: Pull complete
+a3f1dfe736c5: Pull complete
+3971691a3637: Pull complete
+Digest: sha256:1d52838af602b4b5a831beb13a0e4d073280665ea7be7f69ce2382f29c5a613f
+Status: Downloaded newer image for python:3.8-slim
+docker.io/library/python:3.8-slim
+Creating and running container from image: python:3.8-slim...
+0e00a3691dd7d98c4f151726b4509c5afc40fc82e9c470b45c2c1fc8eda6a61b
+Container created and running with image: python:3.8-slim.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS                  PORTS     NAMES
+0e00a3691dd7   python:3.8-slim   "python3"                1 second ago     Up Less than a second             wizardly_jennings
+b3aa3a2c7da1   alpine            "/bin/sh -c '/keep_a…"   46 minutes ago   Up 46 minutes                     elegant_edison
+28a7216f9de3   alpine            "/bin/sh -c '/keep_a…"   47 minutes ago   Up 47 minutes                     agitated_bouman
+Docker setup completed successfully.
+Pulling Docker image: alpine:latest...
+invalid reference format
+Error: Failed to pull Docker image: alpine:latest
+Pulling Docker image: nginx...
+invalid reference format
+Error: Failed to pull Docker image: nginx
+Pulling Docker image: mysql:latest...
+invalid reference format
+Error: Failed to pull Docker image: mysql:latest
+Pulling Docker image: redis...
+invalid reference format
+Error: Failed to pull Docker image: redis
+Pulling Docker image: python:3.8-slim...
+3.8-slim: Pulling from library/python
+Digest: sha256:1d52838af602b4b5a831beb13a0e4d073280665ea7be7f69ce2382f29c5a613f
+Status: Image is up to date for python:3.8-slim
+docker.io/library/python:3.8-slim
+Creating and running container from image: python:3.8-slim...
+645d07cdcfdca1b6c4006986bf40ef1796d82b7408b68041f36972ad657142ab
+Container created and running with image: python:3.8-slim.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS                  PORTS     NAMES
+645d07cdcfdc   python:3.8-slim   "python3"                1 second ago     Up Less than a second             nervous_goldwasser
+b3aa3a2c7da1   alpine            "/bin/sh -c '/keep_a…"   47 minutes ago   Up 47 minutes                     elegant_edison
+28a7216f9de3   alpine            "/bin/sh -c '/keep_a…"   48 minutes ago   Up 48 minutes                     agitated_bouman
+Docker setup completed successfully.
+++ pwd
++ BASE_DIR=/mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
++ IMAGE_LIST_FILE=/mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt
++ '[' '!' -f /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt ']'
++ CONTAINER_CREATED=false
++ echo 'Contents of image_list.txt:'
+Contents of image_list.txt:
++ cat /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt
+alpine:latest
+nginx
+mysql:latest
+redis
+python:3.8-slim+ IFS=
++ read -r IMAGE_NAME
+++ echo $'alpine:latest\r'
+++ xargs
++ IMAGE_NAME=$'alpine:latest\r'
++ '[' -z $'alpine:latest\r' ']'
++ [[ ! alpine:latest =~ ^[a-zA-Z0-9._-]+(:[a-zA-Z0-9._-]+)?$ ]]
++ echo 'Invalid image name format: '\''alpine:latest'\''. Skipping.'
+Invalid image name format: 'alpine:latest'. Skipping.
++ continue
++ IFS=
++ read -r IMAGE_NAME
+++ echo $'nginx\r'
+++ xargs
++ IMAGE_NAME=$'nginx\r'
++ '[' -z $'nginx\r' ']'
++ [[ ! nginx =~ ^[a-zA-Z0-9._-]+(:[a-zA-Z0-9._-]+)?$ ]]
++ echo 'Invalid image name format: '\''nginx'\''. Skipping.'
+Invalid image name format: 'nginx'. Skipping.
++ continue
++ IFS=
++ read -r IMAGE_NAME
+++ echo $'mysql:latest\r'
+++ xargs
++ IMAGE_NAME=$'mysql:latest\r'
++ '[' -z $'mysql:latest\r' ']'
++ [[ ! mysql:latest =~ ^[a-zA-Z0-9._-]+(:[a-zA-Z0-9._-]+)?$ ]]
++ echo 'Invalid image name format: '\''mysql:latest'\''. Skipping.'
+Invalid image name format: 'mysql:latest'. Skipping.
++ continue
++ IFS=
++ read -r IMAGE_NAME
+++ echo $'redis\r'
+++ xargs
++ IMAGE_NAME=$'redis\r'
++ '[' -z $'redis\r' ']'
++ [[ ! redis =~ ^[a-zA-Z0-9._-]+(:[a-zA-Z0-9._-]+)?$ ]]
++ echo 'Invalid image name format: '\''redis'\''. Skipping.'
+Invalid image name format: 'redis'. Skipping.
++ continue
++ IFS=
++ read -r IMAGE_NAME
++ '[' -n python:3.8-slim ']'
+++ echo python:3.8-slim
+++ xargs
++ IMAGE_NAME=python:3.8-slim
++ '[' -z python:3.8-slim ']'
++ [[ ! python:3.8-slim =~ ^[a-zA-Z0-9._-]+(:[a-zA-Z0-9._-]+)?$ ]]
++ echo 'Pulling Docker image: python:3.8-slim...'
+Pulling Docker image: python:3.8-slim...
++ docker pull python:3.8-slim
+3.8-slim: Pulling from library/python
+Digest: sha256:1d52838af602b4b5a831beb13a0e4d073280665ea7be7f69ce2382f29c5a613f
+Status: Image is up to date for python:3.8-slim
+docker.io/library/python:3.8-slim
++ echo 'Creating and running container from image: python:3.8-slim...'
+Creating and running container from image: python:3.8-slim...
++ docker run -d python:3.8-slim
+87fe6221da32463e8da00e23bd3f6fb61f33644ce3d8ce5bf0a7225e7866285a
++ echo 'Container created and running with image: python:3.8-slim.'
+Container created and running with image: python:3.8-slim.
++ CONTAINER_CREATED=true
++ IFS=
++ read -r IMAGE_NAME
++ '[' -n '' ']'
++ echo 'Listing all running Docker containers:'
+Listing all running Docker containers:
++ '[' true = true ']'
++ docker ps
+CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS                  PORTS     NAMES
+87fe6221da32   python:3.8-slim   "python3"                1 second ago     Up Less than a second             magical_aryabhata
+b3aa3a2c7da1   alpine            "/bin/sh -c '/keep_a…"   52 minutes ago   Up 52 minutes                     elegant_edison
+28a7216f9de3   alpine            "/bin/sh -c '/keep_a…"   52 minutes ago   Up 52 minutes                     agitated_bouman
++ echo 'Docker setup completed successfully.'
+Docker setup completed successfully.
+Pulling Docker image: alpine:latest...
+latest: Pulling from library/alpine
+Digest: sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d
+Status: Image is up to date for alpine:latest
+docker.io/library/alpine:latest
+Creating and running container from image: alpine:latest...
+49658459b6d909258ec0166b8dc1a040027e4b3ad668a6ffc1b18ace2069cd6d
+Container created and running with image: alpine:latest.
+Pulling Docker image: nginx...
+Using default tag: latest
+latest: Pulling from library/nginx
+Digest: sha256:28402db69fec7c17e179ea87882667f1e054391138f77ffaf0c3eb388efc3ffb
+Status: Image is up to date for nginx:latest
+docker.io/library/nginx:latest
+Creating and running container from image: nginx...
+c0a6b02454ab5b121b337bea9e5acdd81d04e907e6106d0092e8331e7e659735
+Container created and running with image: nginx.
+Pulling Docker image: mysql:latest...
+latest: Pulling from library/mysql
+eba3c26198b7: Pulling fs layer
+97f7c8c33abe: Pulling fs layer
+aa23d877fa04: Pulling fs layer
+a143609ddd2d: Pulling fs layer
+78308a3437c4: Pulling fs layer
+c0880e4b3737: Pulling fs layer
+4bab267f9ce1: Pulling fs layer
+e575f6d9b17a: Pulling fs layer
+607f86c00053: Pulling fs layer
+cd68caa5febe: Pulling fs layer
+78308a3437c4: Waiting
+c0880e4b3737: Waiting
+4bab267f9ce1: Waiting
+e575f6d9b17a: Waiting
+607f86c00053: Waiting
+cd68caa5febe: Waiting
+a143609ddd2d: Waiting
+97f7c8c33abe: Verifying Checksum
+97f7c8c33abe: Download complete
+aa23d877fa04: Verifying Checksum
+aa23d877fa04: Download complete
+78308a3437c4: Verifying Checksum
+78308a3437c4: Download complete
+c0880e4b3737: Download complete
+a143609ddd2d: Verifying Checksum
+a143609ddd2d: Download complete
+e575f6d9b17a: Verifying Checksum
+e575f6d9b17a: Download complete
+4bab267f9ce1: Verifying Checksum
+4bab267f9ce1: Download complete
+cd68caa5febe: Download complete
+eba3c26198b7: Download complete
+eba3c26198b7: Pull complete
+97f7c8c33abe: Pull complete
+aa23d877fa04: Pull complete
+a143609ddd2d: Pull complete
+78308a3437c4: Pull complete
+c0880e4b3737: Pull complete
+4bab267f9ce1: Pull complete
+e575f6d9b17a: Pull complete
+607f86c00053: Verifying Checksum
+607f86c00053: Download complete
+607f86c00053: Pull complete
+cd68caa5febe: Pull complete
+Digest: sha256:fd8d1b4e287c49e1e35eb5a103f337111947662130eb8a3e6c3e823813f47f7d
+Status: Downloaded newer image for mysql:latest
+docker.io/library/mysql:latest
+Creating and running container from image: mysql:latest...
+20695d11d18db8e4550c175f44ef9c373d12ec197e89520ddccc1fde33ccb18a
+Container created and running with image: mysql:latest.
+Pulling Docker image: redis...
+Using default tag: latest
+latest: Pulling from library/redis
+a480a496ba95: Already exists
+89511e3ccef2: Pulling fs layer
+4ca428e0bb5e: Pulling fs layer
+41cc262fb5bb: Pulling fs layer
+228fc9e0b0ff: Pulling fs layer
+23d1d45ab415: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+6adf9ee29d6f: Pulling fs layer
+228fc9e0b0ff: Waiting
+23d1d45ab415: Waiting
+4f4fb700ef54: Waiting
+6adf9ee29d6f: Waiting
+89511e3ccef2: Download complete
+4ca428e0bb5e: Verifying Checksum
+4ca428e0bb5e: Download complete
+89511e3ccef2: Pull complete
+4ca428e0bb5e: Pull complete
+41cc262fb5bb: Verifying Checksum
+41cc262fb5bb: Download complete
+41cc262fb5bb: Pull complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+23d1d45ab415: Download complete
+6adf9ee29d6f: Download complete
+228fc9e0b0ff: Verifying Checksum
+228fc9e0b0ff: Download complete
+228fc9e0b0ff: Pull complete
+23d1d45ab415: Pull complete
+4f4fb700ef54: Pull complete
+6adf9ee29d6f: Pull complete
+Digest: sha256:a06cea905344470eb49c972f3d030e22f28f632c1b4f43bbe4a26a4329dd6be5
+Status: Downloaded newer image for redis:latest
+docker.io/library/redis:latest
+Creating and running container from image: redis...
+f89c172ad11d6566025a0cf3a18c54b555f7aa7f7695a3d204d1d3f3cf973f33
+Container created and running with image: redis.
+Pulling Docker image: python:3.8-slim...
+3.8-slim: Pulling from library/python
+Digest: sha256:1d52838af602b4b5a831beb13a0e4d073280665ea7be7f69ce2382f29c5a613f
+Status: Image is up to date for python:3.8-slim
+docker.io/library/python:3.8-slim
+Creating and running container from image: python:3.8-slim...
+05b789f60e1380e57b69d2135973066d3a96dacd9a6040061e612061fd7a814b
+Container created and running with image: python:3.8-slim.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE             COMMAND                  CREATED                  STATUS                  PORTS      NAMES
+05b789f60e13   python:3.8-slim   "python3"                Less than a second ago   Up Less than a second              vigilant_williams
+f89c172ad11d   redis             "docker-entrypoint.s…"   2 seconds ago            Up 2 seconds            6379/tcp   vigilant_wu
+c0a6b02454ab   nginx             "/docker-entrypoint.…"   About a minute ago       Up About a minute       80/tcp     frosty_chaum
+b3aa3a2c7da1   alpine            "/bin/sh -c '/keep_a…"   54 minutes ago           Up 54 minutes                      elegant_edison
+28a7216f9de3   alpine            "/bin/sh -c '/keep_a…"   55 minutes ago           Up 55 minutes                      agitated_bouman
+Docker setup completed successfully.
