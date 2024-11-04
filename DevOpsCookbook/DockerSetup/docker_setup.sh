@@ -1,58 +1,25 @@
 #!/bin/bash
-# create_docker_container.sh - Creates Docker containers for all images listed in image_list.txt.
+# docker_setup.sh - Main setup script for Docker, which installs, configures Docker, and creates containers.
+
+# Function to handle errors
+handle_error() {
+    echo "Error: $1"
+    exit 1
+}
 
 # Base directory for the scripts
-BASE_DIR="$(pwd)"
+BASE_DIR="$(pwd)/DockerSetup"
 
-# Path to the image list file
-IMAGE_LIST_FILE="$BASE_DIR/DockerSetup/image_list.txt"
+# Step 1: Install Docker
+echo "Executing: $BASE_DIR/install_docker.sh"
+"$BASE_DIR/install_docker.sh" > >(tee -a install_docker.log) 2>&1 || handle_error "Docker installation failed."
 
-# Check if the image list file exists
-if [ ! -f "$IMAGE_LIST_FILE" ]; then
-  echo "Error: Image list file not found at $IMAGE_LIST_FILE!"
-  exit 1
-fi
+# Step 2: Configure Docker
+echo "Executing: $BASE_DIR/configure_docker.sh"
+"$BASE_DIR/configure_docker.sh" > >(tee -a configure_docker.log) 2>&1 || handle_error "Docker configuration failed."
 
-# Initialize a variable to track if any containers were created
-CONTAINER_CREATED=false
+# Step 3: Create Docker containers
+echo "Executing: $BASE_DIR/create_docker_container.sh"
+"$BASE_DIR/create_docker_container.sh" > >(tee -a create_docker_container.log) 2>&1 || handle_error "Docker container creation failed."
 
-# Loop through each image name in the image list
-while IFS= read -r IMAGE_NAME || [ -n "$IMAGE_NAME" ]; do
-  # Trim whitespace from image name
-  IMAGE_NAME=$(echo "$IMAGE_NAME" | xargs)
-
-  # Skip empty lines
-  if [ -z "$IMAGE_NAME" ]; then
-    echo "Warning: Skipping empty line in image list."
-    continue
-  fi
-
-  echo "Pulling Docker image: $IMAGE_NAME..."
-  
-  # Pull the Docker image and check for errors
-  if ! docker pull "$IMAGE_NAME"; then
-    echo "Error: Failed to pull Docker image: $IMAGE_NAME"
-    continue
-  fi
-  
-  echo "Creating and running container from image: $IMAGE_NAME..."
-  
-  # Create and run the Docker container
-  if ! docker run -d "$IMAGE_NAME"; then
-    echo "Error: Failed to create and run container from image: $IMAGE_NAME"
-    continue
-  fi
-  
-  echo "Container created and running with image: $IMAGE_NAME."
-  CONTAINER_CREATED=true
-done < "$IMAGE_LIST_FILE"
-
-# List all running containers
-echo "Listing all running Docker containers:"
-if [ "$CONTAINER_CREATED" = true ]; then
-  docker ps
-else
-  echo "No containers were created."
-fi
-
-echo "Docker setup completed successfully."
+echo "Docker installation, configuration, and container creation completed successfully."

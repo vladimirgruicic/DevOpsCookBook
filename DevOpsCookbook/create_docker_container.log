@@ -1,0 +1,34 @@
+Pulling Docker image: alpine...
+Using default tag: latest
+latest: Pulling from library/alpine
+Digest: sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d
+Status: Image is up to date for alpine:latest
+docker.io/library/alpine:latest
+Creating and running container from image: alpine...
+Container created and running with image: alpine. Container ID: b3aa3a2c7da114a35b183d33de634e6854206b417dc5518c471be3a5633eae80.
+Keep alive script did not run inside the container.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   6 seconds ago    Up 5 seconds              elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   47 seconds ago   Up 46 seconds             agitated_bouman
+All containers have been created successfully.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   About a minute ago   Up About a minute             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   2 minutes ago        Up 2 minutes                  agitated_bouman
+All containers have been created successfully.
+Checking for image list file at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt
+Checking for keep alive script at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/keep_alive.sh
+Listing all running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   4 minutes ago   Up 4 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   4 minutes ago   Up 4 minutes             agitated_bouman
+All containers have been created successfully.
+Checking for image list file at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/image_list.txt
+Checking for keep alive script at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/keep_alive.sh
+Contents of image_list.txt:
+alpineListing all running Docker containers:
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+b3aa3a2c7da1   alpine    "/bin/sh -c '/keep_a…"   6 minutes ago   Up 6 minutes             elegant_edison
+28a7216f9de3   alpine    "/bin/sh -c '/keep_a…"   6 minutes ago   Up 6 minutes             agitated_bouman
+All containers have been created successfully.
