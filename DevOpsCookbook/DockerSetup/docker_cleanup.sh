@@ -1,10 +1,24 @@
 #!/bin/bash
-# docker_cleanup.sh - Cleans up Docker containers and images.
+# stop_and_remove_all_containers.sh - Stops and removes all Docker containers.
 
-echo "Removing stopped containers..."
-docker container prune -f
+# Function to handle errors
+handle_error() {
+    echo "Error: $1"
+    exit 1
+}
 
-echo "Removing unused images..."
-docker image prune -a -f
+# Stop all running containers
+echo "Stopping all running containers..."
+if ! docker stop $(docker ps -q); then
+    handle_error "Failed to stop containers."
+fi
+echo "All running containers have been stopped."
 
-echo "Docker cleanup complete!"
+# Remove all containers
+echo "Removing all containers..."
+if ! docker rm $(docker ps -a -q); then
+    handle_error "Failed to remove containers."
+fi
+echo "All containers have been removed."
+
+echo "Script completed successfully."

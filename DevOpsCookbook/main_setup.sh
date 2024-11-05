@@ -13,16 +13,17 @@ echo "Making all scripts executable..."
 chmod +x make_scripts_executable.sh || handle_error "Failed to change permissions for make_scripts_executable.sh"
 
 # Run the script to make other scripts executable
-echo "Executing: ./make_scripts_executable.sh in $(pwd)"
+echo "Executing: ./make_scripts_executable.sh"
 ./make_scripts_executable.sh || handle_error "Failed to run make_scripts_executable.sh"
 
-# Example Docker command (ensure Docker is running)
-echo "Checking Docker containers in $(pwd)..."
-docker ps || handle_error "Docker command failed. Please ensure Docker is running."
+# Check Docker status and verify it is running
+echo "Checking Docker status..."
+if ! docker info > /dev/null 2>&1; then
+    handle_error "Docker is not running. Please start Docker before continuing."
+fi
 
 # Proceed with the Docker setup
-echo "Starting the Docker setup in $(pwd)..."
-echo "Executing: ./DockerSetup/docker_setup.sh"
+echo "Starting the Docker setup..."
 ./DockerSetup/docker_setup.sh || handle_error "Docker setup failed."
 
-# Add more setup steps as needed
+echo "Main setup completed successfully."

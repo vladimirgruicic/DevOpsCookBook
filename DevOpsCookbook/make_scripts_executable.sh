@@ -35,7 +35,7 @@ for dir in "${SCRIPT_DIRS[@]}"; do
                 chmod +x "$script" || handle_error "Failed to make $script executable."
                 echo "Made $script executable."
             else
-                echo "Script $script not found in directory $dir."
+                echo "No .sh scripts found in $dir"
             fi
         done
     else

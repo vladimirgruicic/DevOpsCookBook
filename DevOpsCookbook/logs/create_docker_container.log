@@ -1,0 +1,39 @@
+Image 'alpine:latest' already exists locally. Skipping pull.
+Container 'alpine-latest-container' already exists. Starting the existing container...
+alpine-latest-container
+Started existing container: alpine-latest-container.
+Pulling Docker image: nginx...
+Using default tag: latest
+latest: Pulling from library/nginx
+Digest: sha256:28402db69fec7c17e179ea87882667f1e054391138f77ffaf0c3eb388efc3ffb
+Status: Image is up to date for nginx:latest
+docker.io/library/nginx:latest
+Container 'nginx-container' already exists. Starting the existing container...
+nginx-container
+Started existing container: nginx-container.
+Image 'mysql:latest' already exists locally. Skipping pull.
+Container 'mysql-latest-container' already exists. Starting the existing container...
+mysql-latest-container
+Started existing container: mysql-latest-container.
+Pulling Docker image: redis...
+Using default tag: latest
+latest: Pulling from library/redis
+Digest: sha256:a06cea905344470eb49c972f3d030e22f28f632c1b4f43bbe4a26a4329dd6be5
+Status: Image is up to date for redis:latest
+docker.io/library/redis:latest
+Container 'redis-container' already exists. Starting the existing container...
+redis-container
+Started existing container: redis-container.
+Image 'python:3.8-slim' already exists locally. Skipping pull.
+Container 'python-3.8-slim-container' already exists. Starting the existing container...
+python-3.8-slim-container
+Started existing container: python-3.8-slim-container.
+Listing all running Docker containers:
+CONTAINER ID   IMAGE                              COMMAND                  CREATED          STATUS          PORTS                 NAMES
+085479c436e7   devopscookbook-linuxfundamentals   "bash /scripts/run_a…"   10 minutes ago   Up 10 minutes                         devopscookbook-linuxfundamentals-container
+74a0ecffeb91   python:3.8-slim                    "tail -f /dev/null"      22 minutes ago   Up 22 minutes                         python-3.8-slim-container
+c325b5aeb7f6   redis                              "docker-entrypoint.s…"   22 minutes ago   Up 22 minutes   6379/tcp              redis-container
+086455ad9734   mysql:latest                       "docker-entrypoint.s…"   22 minutes ago   Up 22 minutes   3306/tcp, 33060/tcp   mysql-latest-container
+3f023c9113b7   nginx                              "/docker-entrypoint.…"   22 minutes ago   Up 22 minutes   80/tcp                nginx-container
+08ad4090773c   alpine:latest                      "tail -f /dev/null"      22 minutes ago   Up 22 minutes                         alpine-latest-container
+Docker setup completed.

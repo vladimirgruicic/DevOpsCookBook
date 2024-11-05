@@ -39,3 +39,4 @@ docker --version
 # Test Docker installation by running a hello-world container
 echo "Testing Docker installation with hello-world container..."
 sudo docker run hello-world || handle_error "Failed to run the hello-world container."
+echo "Hello-world container ran successfully."
