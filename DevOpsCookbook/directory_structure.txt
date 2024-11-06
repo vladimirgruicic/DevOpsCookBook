@@ -1,63 +1,72 @@
-DevOpsCookbook/
-├── LinuxFundamentals/
-│   ├── README.txt
-│   ├── basic_commands.sh
-│   ├── file_permissions.sh
-│   ├── text_processing.sh
-│   ├── bash_scripting_basics.sh
-│   ├── Dockerfile                      # Dockerfile for building the image
-│   ├── run_all.sh                      # Script to run all bash scripts
-├── logs/                               # Directory to store logs
-│   ├── docker_build_logs.txt           # Logs related to Docker builds
-│   ├── docker_container_logs.txt       # Logs from running Docker containers
-├── SystemAdministration/
-│   ├── README.txt
-│   ├── create_user.sh
-│   ├── bulk_create_users.sh
-│   ├── user_activity_report.sh
-│   ├── manage_processes.sh
-│   ├── check_system_logs.sh
-│   └── package_management.sh
-├── Networking/
-│   ├── README.txt
-│   ├── network_test.sh
-│   ├── show_network_config.sh
-│   └── show_active_connections.sh
-├── DockerSetup/
-│   ├── README.md
-│   ├── install_docker.sh
-│   ├── configure_docker.sh
-│   ├── create_docker_container.sh
-│   ├── docker_setup.sh                # Main setup script for Docker in Bash
-│   ├── docker_setup.py                # Equivalent setup script for Docker in Python
-│   ├── build_all_containers.sh        # Script to build and run all Docker containers
-│   └── image_list.txt
-├── MonitoringAndPerformance/
-│   ├── README.md
-│   ├── SystemMonitoring/
-│   │   ├── README.md
-│   │   └── system_monitoring_tools.sh
-│   ├── ApplicationMonitoring/
-│   │   ├── README.md
-│   │   ├── nagios_setup.sh
-│   │   └── prometheus_setup.sh
-│   ├── LogMonitoring/
-│   │   ├── README.md
-│   │   ├── logwatch_setup.sh
-│   │   └── graylog_setup.sh
-│   └── PerformanceTuning/
-│       ├── README.md
-│       ├── system_tuning.sh
-│       └── application_tuning.sh
-├── AutomationAndConfigurationManagement/
-│   ├── README.md
-│   ├── install_salt.sh
-│   ├── install_terraform.sh
-│   └── cron_job_setup.sh
-├── main_setup.sh                      # Main script to start the overall setup (in Bash)
-├── main.py                            # Python version of the main setup script (for experimentation)
-├── make_scripts_executable.sh         # Script to make all scripts executable
-├── tests/                             # Root directory to store all general tests
-│   ├── test_build_containers.py       # Tests related to building Docker containers
-│   └── test_other_functionality.py    # Placeholder for other general tests
-└── directory_structure.txt            # File with directory structure information
+.
+├── .pytest_cache
+│   ├── .gitignore
+│   ├── CACHEDIR.TAG
+│   ├── README.md
+│   └── v
+│       └── cache
+│           ├── nodeids
+│           └── stepwise
+├── AutomationAndConfigurationManagement
+│   ├── README.md
+│   ├── cron_job_setup.sh
+│   ├── install_salt.sh
+│   └── install_terraform.sh
+├── DockerSetup
+│   ├── README.md
+│   ├── build_all_containers.py
+│   ├── build_all_containers.sh
+│   ├── configure_docker.sh
+│   ├── docker_cleanup.sh
+│   ├── docker_setup.sh
+│   └── install_docker.sh
+├── LinuxFundamentals
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── bash_scripting_basics.sh
+│   ├── basic_file_operations.sh
+│   ├── run_all.sh
+│   ├── set_permissions.sh
+│   └── text_processing.sh
+├── MonitoringAndPerformance
+│   ├── ApplicationMonitoring
+│   │   ├── README.md
+│   │   ├── nagios_setup.sh
+│   │   └── prometheus_setup.sh
+│   ├── LogMonitoring
+│   │   ├── README.md
+│   │   ├── graylog_setup.sh
+│   │   └── logwatch_setup.sh
+│   ├── PerformanceTuning
+│   │   ├── README.md
+│   │   ├── application_tuning.sh
+│   │   └── system_tuning.sh
+│   ├── README.md
+│   └── SystemMonitoring
+│       ├── htop_usage.sh
+│       ├── iostat_usage.sh
+│       ├── top_usage.sh
+│       └── vmstat_usage.sh
+├── Networking
+│   ├── README.md
+│   ├── network_test.sh
+│   ├── show_active_connections.sh
+│   └── show_network_config.sh
+├── README.md
+├── SystemAdministration
+│   ├── README.md
+│   ├── bulk_create_users.sh
+│   ├── create_user.sh
+│   ├── managing_processes.sh
+│   ├── package_management.sh
+│   ├── system_logs.sh
+│   ├── user_activity_report.sh
+│   └── user_and_group_management.sh
+├── directory_structure.txt
+├── logs
+├── main_setup.sh
+├── make_scripts_executable.sh
+└── tests
+    └── test_build_containers.py
+
+15 directories, 54 files

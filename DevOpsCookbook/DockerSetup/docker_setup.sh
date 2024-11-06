@@ -32,15 +32,7 @@ else
     handle_error "Docker configuration failed. Check logs/configure_docker.log for details."
 fi
 
-# Step 3: Create Docker containers using Python script
-echo "Executing: $BASE_DIR/create_docker_container.py"
-if python3 "$BASE_DIR/create_docker_container.py" | tee logs/create_docker_container.log; then
-    echo "Docker containers created successfully."
-else
-    handle_error "Docker container creation failed. Check logs/create_docker_container.log for details."
-fi
-
-# Step 4: Build and run all containers for the project using Python
+# Step 3: Build and run all containers for the project using Python
 echo "Building all Docker containers for the project using Python script..."
 echo "Executing: $BASE_DIR/build_all_containers.py"
 if python3 "$BASE_DIR/build_all_containers.py" | tee logs/build_all_containers.log; then

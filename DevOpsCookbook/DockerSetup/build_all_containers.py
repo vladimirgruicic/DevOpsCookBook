@@ -1,6 +1,5 @@
 import os
 import docker
-import subprocess
 
 # Set up the Docker client
 client = docker.from_env()
@@ -36,6 +35,10 @@ for dir_name in os.listdir(BASE_DIR):
                 image, logs = client.images.build(path=dir_path, dockerfile=dockerfile_path, tag=image_name)
                 print(f"Successfully built Docker image: {image_name}")
                 
+                # Print build logs
+                for log in logs:
+                    print(log.get('stream', ''))
+
                 # Define the container name
                 container_name = f"{image_name}-container"
                 

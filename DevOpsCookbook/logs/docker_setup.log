@@ -1,3 +1,10 @@
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
 Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
 Checking directory: .pytest_cache
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
@@ -83,3 +90,5 @@ Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/D
 No Dockerfile found in the tests directory.
 Listing all running Docker containers:
 devopscookbook-linuxfundamentals-container: running
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.

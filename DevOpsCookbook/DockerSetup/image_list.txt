@@ -1,5 +1,0 @@
-alpine:latest
-nginx
-mysql:latest
-redis
-python:3.8-slim
