@@ -49,4 +49,18 @@ else
     handle_error "Building all containers failed. Check logs/build_all_containers.log for details."
 fi
 
-echo "Docker installation, configuration, and container creation completed successfully."
+# Step 5: Test the containers
+echo "Testing the Docker containers..."
+# Modify the path to point to the tests directory inside linux_fundamentals
+TEST_DIR="$(pwd)/LinuxFundamentals/tests"
+
+# Execute the test script(s) from the tests directory
+echo "Executing: $TEST_DIR/test_containers.py"
+if python3 "$TEST_DIR/test_containers.py" | tee logs/test_containers.log; then
+    echo "Docker containers passed the tests successfully."
+else
+    handle_error "Docker containers testing failed. Check logs/test_containers.log for details."
+fi
+
+echo "Docker installation, configuration, container creation, and testing completed successfully."
+

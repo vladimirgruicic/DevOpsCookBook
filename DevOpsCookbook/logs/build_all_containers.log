@@ -9,8 +9,8 @@ Checking directory: LinuxFundamentals
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
 Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
 Successfully built Docker image: devopscookbook-linuxfundamentals
-Running container for image: devopscookbook-linuxfundamentals...
-Container started successfully for image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
 Checking directory: logs
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
 No Dockerfile found in the logs directory.

@@ -20,33 +20,45 @@ else
     echo "Python is already installed."
 fi
 
-# Step 2: Install Docker SDK for Python
-echo "Checking if Python Docker SDK is installed..."
-if ! python3 -c "import docker" &> /dev/null; then
-    echo "Docker SDK for Python is not installed. Installing..."
-    if ! pip3 install docker; then
-        handle_error "Failed to install Docker SDK for Python. Please install it manually and retry."
+# Step 2: Install pip (if it's not installed)
+echo "Checking if pip is installed..."
+if ! command -v pip3 &> /dev/null; then
+    echo "pip is not installed. Installing pip..."
+    if ! sudo apt-get install -y python3-pip; then
+        handle_error "Failed to install pip. Please install pip manually and retry."
     fi
-    echo "Docker SDK for Python installed successfully."
+    echo "pip installed successfully."
 else
-    echo "Docker SDK for Python is already installed."
+    echo "pip is already installed."
 fi
 
-# Step 3: Make the scripts executable
+# Step 3: Install pytest and docker SDK directly with pip
+echo "Installing pytest and docker SDK with pip..."
+pip3 install pytest docker || handle_error "Failed to install pytest or docker SDK."
+
+# Step 4: List installed packages
+echo "Listing installed packages..."
+pip3 list || handle_error "Failed to list installed packages."
+
+# Step 5: Make the scripts executable
 echo "Making all scripts executable..."
 chmod +x make_scripts_executable.sh || handle_error "Failed to change permissions for make_scripts_executable.sh"
 
 # Run the script to make other scripts executable
-echo "Executing: ./make_scripts_executable.sh"
-./make_scripts_executable.sh || handle_error "Failed to run make_scripts_executable.sh"
+if [[ -f make_scripts_executable.sh ]]; then
+    echo "Executing: ./make_scripts_executable.sh"
+    ./make_scripts_executable.sh || handle_error "Failed to run make_scripts_executable.sh"
+else
+    handle_error "make_scripts_executable.sh does not exist."
+fi
 
-# Step 4: Check Docker status and verify it is running
+# Step 6: Check Docker status and verify it is running
 echo "Checking Docker status..."
 if ! docker info > /dev/null 2>&1; then
     handle_error "Docker is not running. Please start Docker before continuing."
 fi
 
-# Step 5: Proceed with the Docker setup
+# Step 7: Proceed with the Docker setup
 echo "Starting the Docker setup..."
 ./DockerSetup/docker_setup.sh || handle_error "Docker setup failed."
 
