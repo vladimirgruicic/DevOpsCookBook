@@ -1,57 +1,55 @@
 DevOpsCookbook/
-├── DockerSetup/
-│   ├── README.md                           # Documentation for Docker setup
-│   ├── install_docker.sh                   # Script to install Docker
-│   ├── configure_docker.sh                 # Script to configure Docker
-│   ├── create_docker_container.sh           # Script to create Docker containers
-│   ├── build_all_containers.sh              # Script to build Docker images from Dockerfiles
-│   ├── docker_setup.sh                      # Main setup script for Docker
-│   ├── image_list.txt                       # List of Docker images to manage
-│   └── other_script.sh                      # Additional scripts for Docker setup
 ├── LinuxFundamentals/
-│   ├── README.txt                           # Documentation for Linux Fundamentals
-│   ├── basic_file_operations.sh                    # Script covering basic Linux commands
-│   ├── run_all.sh                  # Script for managing file permissions
-│   ├── text_processing.sh                    # Script for text processing tasks
-│   ├── set_permissions.sh             # Script for bash scripting basics
-│   ├── file_permissions.sh                  # Script for managing file permissions
-│   ├── text_processing.sh                    # Script for text processing tasks
-│   └── Dockerfile                           # Dockerfile for the Linux Fundamentals project 
+│   ├── README.txt
+│   ├── basic_commands.sh
+│   ├── file_permissions.sh
+│   ├── text_processing.sh
+│   └── bash_scripting_basics.sh
 ├── SystemAdministration/
-│   ├── README.txt                           # Documentation for system administration
-│   ├── create_user.sh                       # Script to create a new user
-│   ├── bulk_create_users.sh                 # Script to bulk create users
-│   ├── user_activity_report.sh               # Script to generate user activity reports
-│   ├── manage_processes.sh                   # Script for process management
-│   ├── check_system_logs.sh                  # Script to check system logs
-│   └── package_management.sh                 # Script for package management
+│   ├── README.txt
+│   ├── create_user.sh
+│   ├── bulk_create_users.sh
+│   ├── user_activity_report.sh
+│   ├── manage_processes.sh
+│   ├── check_system_logs.sh
+│   └── package_management.sh
 ├── Networking/
-│   ├── README.txt                           # Documentation for networking
-│   ├── network_test.sh                      # Script to test network connectivity
-│   ├── show_network_config.sh               # Script to display network configuration
-│   └── show_active_connections.sh            # Script to show active network connections
+│   ├── README.txt
+│   ├── network_test.sh
+│   ├── show_network_config.sh
+│   └── show_active_connections.sh
+├── DockerSetup/
+│   ├── README.md
+│   ├── install_docker.sh
+│   ├── configure_docker.sh
+│   ├── create_docker_container.sh
+│   ├── docker_setup.sh              # Main setup script for Docker in Bash
+│   ├── docker_setup.py              # Equivalent setup script for Docker in Python
+│   ├── build_all_containers.sh      # Script to build and run all Docker containers
+│   └── image_list.txt
 ├── MonitoringAndPerformance/
-│   ├── README.md                            # Documentation for monitoring and performance
+│   ├── README.md
 │   ├── SystemMonitoring/
-│   │   ├── README.md                        # Documentation for system monitoring
-│   │   └── system_monitoring_tools.sh      # Script for system monitoring tools
+│   │   ├── README.md
+│   │   └── system_monitoring_tools.sh
 │   ├── ApplicationMonitoring/
-│   │   ├── README.md                        # Documentation for application monitoring
-│   │   ├── nagios_setup.sh                  # Script to set up Nagios
-│   │   └── prometheus_setup.sh              # Script to set up Prometheus
+│   │   ├── README.md
+│   │   ├── nagios_setup.sh
+│   │   └── prometheus_setup.sh
 │   ├── LogMonitoring/
-│   │   ├── README.md                        # Documentation for log monitoring
-│   │   ├── logwatch_setup.sh                # Script to set up Logwatch
-│   │   └── graylog_setup.sh                 # Script to set up Graylog
+│   │   ├── README.md
+│   │   ├── logwatch_setup.sh
+│   │   └── graylog_setup.sh
 │   └── PerformanceTuning/
-│       ├── README.md                        # Documentation for performance tuning
-│       ├── system_tuning.sh                 # Script for system tuning
-│       └── application_tuning.sh            # Script for application tuning
+│       ├── README.md
+│       ├── system_tuning.sh
+│       └── application_tuning.sh
 ├── AutomationAndConfigurationManagement/
-│   ├── README.md                            # Documentation for automation and configuration management
-│   ├── install_salt.sh                      # Script to install Salt
-│   ├── install_terraform.sh                 # Script to install Terraform
-│   └── cron_job_setup.sh                    # Script to set up cron jobs
-├── main_setup.sh                            # Main script to start the overall setup
-├── make_scripts_executable.sh               # Script to make all scripts executable
-└── directory_structure.txt                  # Text file listing the directory structure
+│   ├── README.md
+│   ├── install_salt.sh
+│   ├── install_terraform.sh
+│   └── cron_job_setup.sh
+├── main_setup.sh                    # Main script to start the overall setup (in Bash)
+├── main.py                          # Python version of the main setup script (for experimentation)
+├── make_scripts_executable.sh       # Script to make all scripts executable
+└── directory_structure.txt          # File with directory structure information
