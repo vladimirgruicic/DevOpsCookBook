@@ -13,5 +13,8 @@ COPY *.sh /scripts/
 # Make all scripts executable
 RUN chmod +x /scripts/*.sh
 
-# Default command to run all scripts
-CMD ["bash", "/scripts/run_all.sh"]
+# Set up log directory
+RUN mkdir -p /logs
+
+# Redirect script output to log files
+CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1

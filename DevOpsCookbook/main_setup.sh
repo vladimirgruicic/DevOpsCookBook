@@ -62,4 +62,12 @@ fi
 echo "Starting the Docker setup..."
 ./DockerSetup/docker_setup.sh || handle_error "Docker setup failed."
 
+# Step 8: Run the tests to ensure everything is working correctly
+echo "Running tests to verify Docker containers..."
+if pytest tests/test_build_container.py; then
+    echo "Tests passed successfully!"
+else
+    handle_error "Some tests failed. Check logs for details."
+fi
+
 echo "Main setup completed successfully."
