@@ -12,6 +12,11 @@
 │   ├── cron_job_setup.sh
 │   ├── install_salt.sh
 │   └── install_terraform.sh
+├── DockerManagement
+│   ├── check_scripts_folder.py
+│   ├── container_networks.py
+│   ├── container_resources.py
+│   └── list_images.py
 ├── DockerSetup
 │   ├── README.md
 │   ├── build_all_containers.py
@@ -66,7 +71,10 @@
 ├── logs
 ├── main_setup.sh
 ├── make_scripts_executable.sh
+├── monitor_docker.py
 └── tests
+    ├── __pycache__
+    │   └── test_build_containers.cpython-310-pytest-8.3.3.pyc
     └── test_build_containers.py
 
-15 directories, 54 files
+17 directories, 60 files

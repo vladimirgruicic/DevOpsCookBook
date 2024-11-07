@@ -75,3 +75,18 @@ Made /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationMan
 Executing: chmod +x /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/install_terraform.sh
 Made /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/install_terraform.sh executable.
 All scripts have been made executable.
+Base directory for scripts: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Processing directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals
+Executing: chmod +x /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/bash_scripting_basics.sh
+Error: Failed to make /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/bash_scripting_basics.sh executable.
+Current directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Base directory for scripts: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Processing directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals
+Executing: chmod +x /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/bash_scripting_basics.sh
+Error: Failed to make /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/bash_scripting_basics.sh executable.
+Current directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Base directory for scripts: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Processing directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals
+Executing: chmod +x /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/bash_scripting_basics.sh
+Error: Failed to make /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/bash_scripting_basics.sh executable.
+Current directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook

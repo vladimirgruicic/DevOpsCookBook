@@ -37,7 +37,7 @@ fi
 
 # Step 3: Install pytest and docker SDK directly with pip
 echo "Installing pytest and docker SDK with pip..."
-pip3 install pytest docker | tee -a logs/pip_packages_install.log || handle_error "Failed to install pytest or docker SDK. Check logs/pip_packages_install.log for details."
+pip3 install pytest docker tabulate| tee -a logs/pip_packages_install.log || handle_error "Failed to install pytest or docker SDK. Check logs/pip_packages_install.log for details."
 
 # Step 4: List installed packages
 echo "Listing installed packages..."

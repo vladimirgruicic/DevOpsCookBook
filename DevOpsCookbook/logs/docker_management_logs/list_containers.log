@@ -1,0 +1,48 @@
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+INFO:root:Running containers with CPU and memory limits:
+INFO:root:+--------------------------------------------+-----------------------------------------+-----------+--------------+
+|               Container Name               |                  Image                  | CPU Limit | Memory Limit |
++--------------------------------------------+-----------------------------------------+-----------+--------------+
+| devopscookbook-linuxfundamentals-container | devopscookbook-linuxfundamentals:latest | Unlimited |  Unlimited   |
++--------------------------------------------+-----------------------------------------+-----------+--------------+

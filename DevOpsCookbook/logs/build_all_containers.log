@@ -5,6 +5,9 @@ No Dockerfile found in the .pytest_cache directory.
 Checking directory: AutomationAndConfigurationManagement
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
 No Dockerfile found in the AutomationAndConfigurationManagement directory.
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the DockerManagement directory.
 Checking directory: DockerSetup
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
 No Dockerfile found in the DockerSetup directory.
