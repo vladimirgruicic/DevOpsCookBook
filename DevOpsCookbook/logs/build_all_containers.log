@@ -1,88 +1,68 @@
+Docker client version: 27.0.3
 Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
 Checking directory: .pytest_cache
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
-No Dockerfile found in the .pytest_cache directory.
+No Dockerfile found in the '.pytest_cache' directory.
 Checking directory: AutomationAndConfigurationManagement
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
-No Dockerfile found in the AutomationAndConfigurationManagement directory.
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
 Checking directory: DockerManagement
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
-No Dockerfile found in the DockerManagement directory.
+No Dockerfile found in the 'DockerManagement' directory.
 Checking directory: DockerSetup
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
-No Dockerfile found in the DockerSetup directory.
+No Dockerfile found in the 'DockerSetup' directory.
 Checking directory: LinuxFundamentals
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
 Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
 Successfully built Docker image: devopscookbook-linuxfundamentals
-Step 1/7 : FROM alpine:latest
-
-
- ---> 91ef0af61f39
-
-Step 2/7 : RUN apk update && apk add bash
-
-
- ---> Using cache
-
- ---> b7398c73673f
-
-Step 3/7 : WORKDIR /scripts
-
-
- ---> Using cache
-
- ---> 6c19d079e200
-
-Step 4/7 : COPY ./*.sh /scripts/
-
-
- ---> Using cache
-
- ---> 1938ed8f5a28
-
-Step 5/7 : RUN chmod +x /scripts/*.sh
-
-
- ---> Using cache
-
- ---> 3abf3e3a9e75
-
-Step 6/7 : RUN mkdir -p /logs
-
-
- ---> Using cache
-
- ---> c176b3d9452e
-
-Step 7/7 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
-
-
- ---> Using cache
-
- ---> 18969ed09649
-
-
-Successfully built 18969ed09649
-
-Successfully tagged devopscookbook-linuxfundamentals:latest
-
-Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
-Started existing container: devopscookbook-linuxfundamentals-container
+Running container for image: devopscookbook-linuxfundamentals...
+Container started successfully for image: devopscookbook-linuxfundamentals
 Checking directory: logs
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
-No Dockerfile found in the logs directory.
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
 Checking directory: MonitoringAndPerformance
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
-No Dockerfile found in the MonitoringAndPerformance directory.
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
 Checking directory: Networking
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
-No Dockerfile found in the Networking directory.
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
 Checking directory: SystemAdministration
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
-No Dockerfile found in the SystemAdministration directory.
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Running container for image: devopscookbook-systemadministration...
+Container started successfully for image: devopscookbook-systemadministration
 Checking directory: tests
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
-No Dockerfile found in the tests directory.
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
 Listing all running Docker containers:
-devopscookbook-linuxfundamentals-container: running
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | aed1d8ad5d30 | running |
+|  devopscookbook-linuxfundamentals-container   | 9e65e3e48db6 | running |
++-----------------------------------------------+--------------+---------+

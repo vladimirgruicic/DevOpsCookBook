@@ -383,3 +383,846 @@ Listing all running Docker containers:
 devopscookbook-linuxfundamentals-container: running
 All Docker containers built successfully.
 Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Current directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup
+Logs will be stored in: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/docker_management_logs
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Running container for image: devopscookbook-systemadministration...
+Container started successfully for image: devopscookbook-systemadministration
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | 9f76565ba92f | exited  |
+|  devopscookbook-linuxfundamentals-container   | e915a19ff8da | running |
++-----------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Current directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup
+Logs will be stored in: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/docker_management_logs
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Error: Failed to build Docker image: devopscookbook-systemadministration. Error: COPY failed: file not found in build context or excluded by .dockerignore: stat run_all.sh: file does not exist
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  |   Build Failed    |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++--------------------------------------------+--------------+---------+
+|               Container Name               |      ID      | Status  |
++--------------------------------------------+--------------+---------+
+| devopscookbook-linuxfundamentals-container | e915a19ff8da | running |
++--------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Current directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup
+Logs will be stored in: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/docker_management_logs
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Error: Failed to build Docker image: devopscookbook-systemadministration. Error: COPY failed: file not found in build context or excluded by .dockerignore: stat run_all.sh: file does not exist
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  |   Build Failed    |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++--------------------------------------------+--------------+---------+
+|               Container Name               |      ID      | Status  |
++--------------------------------------------+--------------+---------+
+| devopscookbook-linuxfundamentals-container | e915a19ff8da | running |
++--------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Current directory: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup
+Logs will be stored in: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/docker_management_logs
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Container 'devopscookbook-systemadministration-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-systemadministration-container
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | 9f76565ba92f | exited  |
+|  devopscookbook-linuxfundamentals-container   | e915a19ff8da | running |
++-----------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Container 'devopscookbook-systemadministration-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-systemadministration-container
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | 9f76565ba92f | running |
+|  devopscookbook-linuxfundamentals-container   | e915a19ff8da | running |
++-----------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Container 'devopscookbook-systemadministration-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-systemadministration-container
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | 9f76565ba92f | running |
+|  devopscookbook-linuxfundamentals-container   | e915a19ff8da | running |
++-----------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Container 'devopscookbook-systemadministration-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-systemadministration-container
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | 9f76565ba92f | running |
+|  devopscookbook-linuxfundamentals-container   | e915a19ff8da | running |
++-----------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Error: Failed to build Docker image: devopscookbook-systemadministration. Error: The command '/bin/sh -c apt-get update &&     apt-get install -y bash coreutils sudo procps &&     apt-get clean &&     rm -rf /var/lib/apt/lists/*' returned a non-zero code: 127
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  |   Build Failed    |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++--------------------------------------------+--------------+---------+
+|               Container Name               |      ID      | Status  |
++--------------------------------------------+--------------+---------+
+| devopscookbook-linuxfundamentals-container | e915a19ff8da | running |
++--------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Error: Failed to build Docker image: devopscookbook-systemadministration. Error: The command '/bin/sh -c apt-get update &&     apt-get install -y bash coreutils sudo procps &&     apt-get clean &&     rm -rf /var/lib/apt/lists/*' returned a non-zero code: 127
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  |   Build Failed    |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++--------------------------------------------+--------------+---------+
+|               Container Name               |      ID      | Status  |
++--------------------------------------------+--------------+---------+
+| devopscookbook-linuxfundamentals-container | e915a19ff8da | running |
++--------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Container 'devopscookbook-systemadministration-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-systemadministration-container
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | 9f76565ba92f | running |
+|  devopscookbook-linuxfundamentals-container   | e915a19ff8da | running |
++-----------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.
+Docker is already installed. Skipping installation.
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/configure_docker.sh
+Creating the docker group (if not exists)...
+root is already in the docker group.
+Docker configured successfully.
+Building all Docker containers for the project using Python script...
+Executing: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/build_all_containers.py
+Docker client version: 27.0.3
+Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+Checking directory: .pytest_cache
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+No Dockerfile found in the '.pytest_cache' directory.
+Checking directory: AutomationAndConfigurationManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Skipping non-directory: directory_structure.txt
+Checking directory: DockerManagement
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+No Dockerfile found in the 'DockerManagement' directory.
+Checking directory: DockerSetup
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+No Dockerfile found in the 'DockerSetup' directory.
+Checking directory: LinuxFundamentals
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+Successfully built Docker image: devopscookbook-linuxfundamentals
+Running container for image: devopscookbook-linuxfundamentals...
+Container started successfully for image: devopscookbook-linuxfundamentals
+Checking directory: logs
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+No Dockerfile found in the 'logs' directory.
+Skipping non-directory: main_setup.sh
+Skipping non-directory: make_scripts_executable.sh
+Checking directory: MonitoringAndPerformance
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Skipping non-directory: monitor_docker.py
+Checking directory: Networking
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+No Dockerfile found in the 'Networking' directory.
+Skipping non-directory: README.md
+Checking directory: SystemAdministration
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+Successfully built Docker image: devopscookbook-systemadministration
+Running container for image: devopscookbook-systemadministration...
+Container started successfully for image: devopscookbook-systemadministration
+Checking directory: tests
+Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+No Dockerfile found in the 'tests' directory.
+Skipping non-directory: test_containers.log
+
+Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+
+Listing all running Docker containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | aed1d8ad5d30 | running |
+|  devopscookbook-linuxfundamentals-container   | 9e65e3e48db6 | running |
++-----------------------------------------------+--------------+---------+
+All Docker containers built successfully.
+Docker installation, configuration, container and creation completed successfully.

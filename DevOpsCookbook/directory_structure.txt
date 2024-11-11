@@ -59,16 +59,19 @@
 │   └── show_network_config.sh
 ├── README.md
 ├── SystemAdministration
+│   ├── Dockerfile
 │   ├── README.md
 │   ├── bulk_create_users.sh
 │   ├── create_user.sh
 │   ├── managing_processes.sh
 │   ├── package_management.sh
+│   ├── run_all.sh
 │   ├── system_logs.sh
 │   ├── user_activity_report.sh
 │   └── user_and_group_management.sh
 ├── directory_structure.txt
 ├── logs
+│   └── docker_management_logs
 ├── main_setup.sh
 ├── make_scripts_executable.sh
 ├── monitor_docker.py
@@ -77,4 +80,4 @@
     │   └── test_build_containers.cpython-310-pytest-8.3.3.pyc
     └── test_build_containers.py
 
-17 directories, 60 files
+18 directories, 62 files
