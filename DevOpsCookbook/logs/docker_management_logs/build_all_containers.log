@@ -1203,3 +1203,725 @@ Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libapparmor1 amd
 | devopscookbook-systemadministration-container | aed1d8ad5d30 | running |
 |  devopscookbook-linuxfundamentals-container   | 9e65e3e48db6 | running |
 +-----------------------------------------------+--------------+---------+
+2024-11-11 16:18:27,744 - INFO - Docker client version: 27.0.3
+2024-11-11 16:18:27,745 - INFO - Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+2024-11-11 16:18:27,749 - INFO - Checking directory: .pytest_cache
+2024-11-11 16:18:27,750 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+2024-11-11 16:18:27,751 - WARNING - No Dockerfile found in the '.pytest_cache' directory.
+2024-11-11 16:18:27,752 - INFO - Checking directory: AutomationAndConfigurationManagement
+2024-11-11 16:18:27,752 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+2024-11-11 16:18:27,754 - WARNING - No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+2024-11-11 16:18:27,755 - INFO - Skipping non-directory: directory_structure.txt
+2024-11-11 16:18:27,756 - INFO - Checking directory: DockerManagement
+2024-11-11 16:18:27,756 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+2024-11-11 16:18:27,757 - WARNING - No Dockerfile found in the 'DockerManagement' directory.
+2024-11-11 16:18:27,757 - INFO - Checking directory: DockerSetup
+2024-11-11 16:18:27,758 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+2024-11-11 16:18:27,758 - WARNING - No Dockerfile found in the 'DockerSetup' directory.
+2024-11-11 16:18:27,759 - INFO - Checking directory: LinuxFundamentals
+2024-11-11 16:18:27,760 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+2024-11-11 16:18:27,761 - INFO - Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+2024-11-11 16:18:27,832 - INFO - Successfully built Docker image: devopscookbook-linuxfundamentals
+2024-11-11 16:18:27,833 - INFO - Build log for devopscookbook-linuxfundamentals: Step 1/7 : FROM alpine:latest
+2024-11-11 16:18:27,833 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 91ef0af61f39
+2024-11-11 16:18:27,833 - INFO - Build log for devopscookbook-linuxfundamentals: Step 2/7 : RUN apk update && apk add bash
+2024-11-11 16:18:27,834 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-11 16:18:27,834 - INFO - Build log for devopscookbook-linuxfundamentals: ---> b7398c73673f
+2024-11-11 16:18:27,834 - INFO - Build log for devopscookbook-linuxfundamentals: Step 3/7 : WORKDIR /scripts
+2024-11-11 16:18:27,834 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-11 16:18:27,834 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 6c19d079e200
+2024-11-11 16:18:27,835 - INFO - Build log for devopscookbook-linuxfundamentals: Step 4/7 : COPY ./*.sh /scripts/
+2024-11-11 16:18:27,835 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-11 16:18:27,835 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 1938ed8f5a28
+2024-11-11 16:18:27,835 - INFO - Build log for devopscookbook-linuxfundamentals: Step 5/7 : RUN chmod +x /scripts/*.sh
+2024-11-11 16:18:27,836 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-11 16:18:27,836 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 3abf3e3a9e75
+2024-11-11 16:18:27,836 - INFO - Build log for devopscookbook-linuxfundamentals: Step 6/7 : RUN mkdir -p /logs
+2024-11-11 16:18:27,837 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-11 16:18:27,837 - INFO - Build log for devopscookbook-linuxfundamentals: ---> c176b3d9452e
+2024-11-11 16:18:27,837 - INFO - Build log for devopscookbook-linuxfundamentals: Step 7/7 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-11 16:18:27,837 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-11 16:18:27,838 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 18969ed09649
+2024-11-11 16:18:27,838 - INFO - Build log for devopscookbook-linuxfundamentals: Successfully built 18969ed09649
+2024-11-11 16:18:27,838 - INFO - Build log for devopscookbook-linuxfundamentals: Successfully tagged devopscookbook-linuxfundamentals:latest
+2024-11-11 16:18:27,842 - INFO - Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+2024-11-11 16:18:27,846 - INFO - Started existing container: devopscookbook-linuxfundamentals-container
+2024-11-11 16:18:27,847 - INFO - Checking directory: logs
+2024-11-11 16:18:27,847 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+2024-11-11 16:18:27,848 - WARNING - No Dockerfile found in the 'logs' directory.
+2024-11-11 16:18:27,848 - INFO - Skipping non-directory: main_setup.sh
+2024-11-11 16:18:27,849 - INFO - Skipping non-directory: make_scripts_executable.sh
+2024-11-11 16:18:27,850 - INFO - Checking directory: MonitoringAndPerformance
+2024-11-11 16:18:27,850 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+2024-11-11 16:18:27,851 - WARNING - No Dockerfile found in the 'MonitoringAndPerformance' directory.
+2024-11-11 16:18:27,852 - INFO - Skipping non-directory: monitor_docker.py
+2024-11-11 16:18:27,853 - INFO - Checking directory: Networking
+2024-11-11 16:18:27,853 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+2024-11-11 16:18:27,854 - WARNING - No Dockerfile found in the 'Networking' directory.
+2024-11-11 16:18:27,855 - INFO - Skipping non-directory: README.md
+2024-11-11 16:18:27,856 - INFO - Checking directory: SystemAdministration
+2024-11-11 16:18:27,856 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+2024-11-11 16:18:27,857 - INFO - Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+2024-11-11 16:18:27,928 - INFO - Successfully built Docker image: devopscookbook-systemadministration
+2024-11-11 16:18:27,928 - INFO - Build log for devopscookbook-systemadministration: Step 1/7 : FROM alpine:latest
+2024-11-11 16:18:27,929 - INFO - Build log for devopscookbook-systemadministration: ---> 91ef0af61f39
+2024-11-11 16:18:27,929 - INFO - Build log for devopscookbook-systemadministration: Step 2/7 : RUN apk update && apk add bash
+2024-11-11 16:18:27,930 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-11 16:18:27,930 - INFO - Build log for devopscookbook-systemadministration: ---> b7398c73673f
+2024-11-11 16:18:27,930 - INFO - Build log for devopscookbook-systemadministration: Step 3/7 : WORKDIR /scripts
+2024-11-11 16:18:27,930 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-11 16:18:27,931 - INFO - Build log for devopscookbook-systemadministration: ---> 6c19d079e200
+2024-11-11 16:18:27,931 - INFO - Build log for devopscookbook-systemadministration: Step 4/7 : COPY ./*.sh /scripts/
+2024-11-11 16:18:27,931 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-11 16:18:27,932 - INFO - Build log for devopscookbook-systemadministration: ---> 4024b42b1d93
+2024-11-11 16:18:27,932 - INFO - Build log for devopscookbook-systemadministration: Step 5/7 : RUN chmod +x /scripts/*.sh
+2024-11-11 16:18:27,932 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-11 16:18:27,932 - INFO - Build log for devopscookbook-systemadministration: ---> 4be85b4799c8
+2024-11-11 16:18:27,933 - INFO - Build log for devopscookbook-systemadministration: Step 6/7 : RUN mkdir -p /logs
+2024-11-11 16:18:27,933 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-11 16:18:27,933 - INFO - Build log for devopscookbook-systemadministration: ---> f1db7e4c697c
+2024-11-11 16:18:27,933 - INFO - Build log for devopscookbook-systemadministration: Step 7/7 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-11 16:18:27,934 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-11 16:18:27,934 - INFO - Build log for devopscookbook-systemadministration: ---> b39e8b9c4d20
+2024-11-11 16:18:27,934 - INFO - Build log for devopscookbook-systemadministration: Successfully built b39e8b9c4d20
+2024-11-11 16:18:27,934 - INFO - Build log for devopscookbook-systemadministration: Successfully tagged devopscookbook-systemadministration:latest
+2024-11-11 16:18:27,938 - INFO - Container 'devopscookbook-systemadministration-container' already exists. Starting the existing container...
+2024-11-11 16:18:27,941 - INFO - Started existing container: devopscookbook-systemadministration-container
+2024-11-11 16:18:27,942 - INFO - Checking directory: tests
+2024-11-11 16:18:27,943 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+2024-11-11 16:18:27,944 - WARNING - No Dockerfile found in the 'tests' directory.
+2024-11-11 16:18:27,945 - INFO - Skipping non-directory: test_containers.log
+2024-11-11 16:18:27,946 - INFO - Docker Build and Run Results:
++--------------------------------------+-------------------+
+|              Image Name              |   Build Status    |
++--------------------------------------+-------------------+
+|            .pytest_cache             |   No Dockerfile   |
+| AutomationAndConfigurationManagement |   No Dockerfile   |
+|           DockerManagement           |   No Dockerfile   |
+|             DockerSetup              |   No Dockerfile   |
+|   devopscookbook-linuxfundamentals   | Built and Running |
+|                 logs                 |   No Dockerfile   |
+|       MonitoringAndPerformance       |   No Dockerfile   |
+|              Networking              |   No Dockerfile   |
+| devopscookbook-systemadministration  | Built and Running |
+|                tests                 |   No Dockerfile   |
++--------------------------------------+-------------------+
+2024-11-11 16:18:27,947 - INFO - Listing all running Docker containers:
+2024-11-11 16:18:27,954 - INFO - Running Docker Containers:
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | aed1d8ad5d30 | running |
+|  devopscookbook-linuxfundamentals-container   | 9e65e3e48db6 | running |
++-----------------------------------------------+--------------+---------+
+2024-11-12 13:55:51,431 - INFO - Docker client version: 27.0.3
+2024-11-12 13:55:51,432 - INFO - Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+2024-11-12 13:55:51,435 - INFO - Checking directory: .pytest_cache
+2024-11-12 13:55:51,436 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+2024-11-12 13:55:51,436 - WARNING - No Dockerfile found in the '.pytest_cache' directory.
+2024-11-12 13:55:51,438 - INFO - Checking directory: AutomationAndConfigurationManagement
+2024-11-12 13:55:51,438 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+2024-11-12 13:55:51,439 - INFO - Building Docker image: devopscookbook-automationandconfigurationmanagement from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile...
+2024-11-12 13:55:57,965 - INFO - Successfully built Docker image: devopscookbook-automationandconfigurationmanagement
+2024-11-12 13:55:57,966 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 1/8 : FROM alpine:latest
+2024-11-12 13:55:57,966 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 91ef0af61f39
+2024-11-12 13:55:57,967 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 2/8 : RUN apk update && apk add --no-cache bash
+2024-11-12 13:55:57,967 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in bb5f9e05b0b9
+2024-11-12 13:55:57,967 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 13:55:57,968 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 13:55:57,969 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: v3.20.3-302-ga2d31895692 [https://dl-cdn.alpinelinux.org/alpine/v3.20/main]
+v3.20.3-303-gb38821c39e5 [https://dl-cdn.alpinelinux.org/alpine/v3.20/community]
+OK: 24168 distinct packages available
+2024-11-12 13:55:57,969 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 13:55:57,970 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 13:55:57,970 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (1/4) Installing ncurses-terminfo-base (6.4_p20240420-r1)
+2024-11-12 13:55:57,970 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (2/4) Installing libncursesw (6.4_p20240420-r1)
+2024-11-12 13:55:57,970 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (3/4) Installing readline (8.2.10-r0)
+2024-11-12 13:55:57,971 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (4/4) Installing bash (5.2.26-r0)
+2024-11-12 13:55:57,971 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Executing bash-5.2.26-r0.post-install
+2024-11-12 13:55:57,971 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Executing busybox-1.36.1-r29.trigger
+2024-11-12 13:55:57,971 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: OK: 10 MiB in 18 packages
+2024-11-12 13:55:57,972 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container bb5f9e05b0b9
+2024-11-12 13:55:57,972 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 9cb20d9493a7
+2024-11-12 13:55:57,972 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 3/8 : WORKDIR /scripts
+2024-11-12 13:55:57,972 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in 10cf450a5885
+2024-11-12 13:55:57,972 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container 10cf450a5885
+2024-11-12 13:55:57,973 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> f0b44aa2e3c4
+2024-11-12 13:55:57,973 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 4/8 : COPY ./*.sh /scripts/
+2024-11-12 13:55:57,973 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 7fcff269483d
+2024-11-12 13:55:57,973 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 5/8 : RUN chmod +x /scripts/*.sh
+2024-11-12 13:55:57,974 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in 9f46b05fb52b
+2024-11-12 13:55:57,974 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container 9f46b05fb52b
+2024-11-12 13:55:57,974 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 771d7828913d
+2024-11-12 13:55:57,974 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 6/8 : RUN mkdir -p /logs
+2024-11-12 13:55:57,974 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in e55d3890c72d
+2024-11-12 13:55:57,975 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container e55d3890c72d
+2024-11-12 13:55:57,975 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 7cf431984620
+2024-11-12 13:55:57,975 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 7/8 : RUN echo '#!/bin/bash' > /scripts/run_all.sh &&     echo '/scripts/cron_job_setup.sh' >> /scripts/run_all.sh &&     echo '/scripts/install_salt.sh' >> /scripts/run_all.sh &&     echo '/scripts/install_terraform.sh' >> /scripts/run_all.sh &&     chmod +x /scripts/run_all.sh
+2024-11-12 13:55:57,975 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in b1d740c427b2
+2024-11-12 13:55:57,976 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container b1d740c427b2
+2024-11-12 13:55:57,976 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> bc6fb2917e0e
+2024-11-12 13:55:57,976 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 8/8 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 13:55:57,976 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in 94d967c67083
+2024-11-12 13:55:57,977 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container 94d967c67083
+2024-11-12 13:55:57,977 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 9f38ff67f98a
+2024-11-12 13:55:57,977 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Successfully built 9f38ff67f98a
+2024-11-12 13:55:57,977 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Successfully tagged devopscookbook-automationandconfigurationmanagement:latest
+2024-11-12 13:55:57,979 - INFO - Running container for image: devopscookbook-automationandconfigurationmanagement...
+2024-11-12 13:55:58,459 - INFO - Container started successfully for image: devopscookbook-automationandconfigurationmanagement
+2024-11-12 13:55:58,460 - INFO - Skipping non-directory: directory_structure.txt
+2024-11-12 13:55:58,461 - INFO - Checking directory: DockerManagement
+2024-11-12 13:55:58,461 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+2024-11-12 13:55:58,462 - WARNING - No Dockerfile found in the 'DockerManagement' directory.
+2024-11-12 13:55:58,463 - INFO - Checking directory: DockerSetup
+2024-11-12 13:55:58,463 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+2024-11-12 13:55:58,464 - WARNING - No Dockerfile found in the 'DockerSetup' directory.
+2024-11-12 13:55:58,465 - INFO - Checking directory: LinuxFundamentals
+2024-11-12 13:55:58,465 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+2024-11-12 13:55:58,466 - INFO - Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+2024-11-12 13:55:58,526 - INFO - Successfully built Docker image: devopscookbook-linuxfundamentals
+2024-11-12 13:55:58,527 - INFO - Build log for devopscookbook-linuxfundamentals: Step 1/7 : FROM alpine:latest
+2024-11-12 13:55:58,527 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 91ef0af61f39
+2024-11-12 13:55:58,527 - INFO - Build log for devopscookbook-linuxfundamentals: Step 2/7 : RUN apk update && apk add bash
+2024-11-12 13:55:58,527 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-12 13:55:58,528 - INFO - Build log for devopscookbook-linuxfundamentals: ---> b7398c73673f
+2024-11-12 13:55:58,528 - INFO - Build log for devopscookbook-linuxfundamentals: Step 3/7 : WORKDIR /scripts
+2024-11-12 13:55:58,528 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-12 13:55:58,528 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 6c19d079e200
+2024-11-12 13:55:58,528 - INFO - Build log for devopscookbook-linuxfundamentals: Step 4/7 : COPY ./*.sh /scripts/
+2024-11-12 13:55:58,528 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-12 13:55:58,529 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 1938ed8f5a28
+2024-11-12 13:55:58,529 - INFO - Build log for devopscookbook-linuxfundamentals: Step 5/7 : RUN chmod +x /scripts/*.sh
+2024-11-12 13:55:58,529 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-12 13:55:58,529 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 3abf3e3a9e75
+2024-11-12 13:55:58,529 - INFO - Build log for devopscookbook-linuxfundamentals: Step 6/7 : RUN mkdir -p /logs
+2024-11-12 13:55:58,530 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-12 13:55:58,530 - INFO - Build log for devopscookbook-linuxfundamentals: ---> c176b3d9452e
+2024-11-12 13:55:58,530 - INFO - Build log for devopscookbook-linuxfundamentals: Step 7/7 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 13:55:58,530 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Using cache
+2024-11-12 13:55:58,531 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 18969ed09649
+2024-11-12 13:55:58,531 - INFO - Build log for devopscookbook-linuxfundamentals: Successfully built 18969ed09649
+2024-11-12 13:55:58,531 - INFO - Build log for devopscookbook-linuxfundamentals: Successfully tagged devopscookbook-linuxfundamentals:latest
+2024-11-12 13:55:58,533 - INFO - Running container for image: devopscookbook-linuxfundamentals...
+2024-11-12 13:55:58,881 - INFO - Container started successfully for image: devopscookbook-linuxfundamentals
+2024-11-12 13:55:58,882 - INFO - Checking directory: logs
+2024-11-12 13:55:58,883 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+2024-11-12 13:55:58,883 - WARNING - No Dockerfile found in the 'logs' directory.
+2024-11-12 13:55:58,884 - INFO - Skipping non-directory: main_setup.sh
+2024-11-12 13:55:58,884 - INFO - Skipping non-directory: make_scripts_executable.sh
+2024-11-12 13:55:58,885 - INFO - Checking directory: MonitoringAndPerformance
+2024-11-12 13:55:58,885 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+2024-11-12 13:55:58,887 - INFO - Building Docker image: devopscookbook-monitoringandperformance from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile...
+2024-11-12 13:56:06,034 - INFO - Successfully built Docker image: devopscookbook-monitoringandperformance
+2024-11-12 13:56:06,034 - INFO - Build log for devopscookbook-monitoringandperformance: Step 1/11 : FROM alpine:latest
+2024-11-12 13:56:06,034 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 91ef0af61f39
+2024-11-12 13:56:06,035 - INFO - Build log for devopscookbook-monitoringandperformance: Step 2/11 : RUN apk update && apk add --no-cache bash sysstat procps
+2024-11-12 13:56:06,035 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 34fd0fb48a03
+2024-11-12 13:56:06,035 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:06,035 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:06,035 - INFO - Build log for devopscookbook-monitoringandperformance: v3.20.3-302-ga2d31895692 [https://dl-cdn.alpinelinux.org/alpine/v3.20/main]
+v3.20.3-303-gb38821c39e5 [https://dl-cdn.alpinelinux.org/alpine/v3.20/community]
+OK: 24168 distinct packages available
+2024-11-12 13:56:06,036 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:06,036 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:06,036 - INFO - Build log for devopscookbook-monitoringandperformance: (1/8) Installing ncurses-terminfo-base (6.4_p20240420-r1)
+2024-11-12 13:56:06,036 - INFO - Build log for devopscookbook-monitoringandperformance: (2/8) Installing libncursesw (6.4_p20240420-r1)
+2024-11-12 13:56:06,036 - INFO - Build log for devopscookbook-monitoringandperformance: (3/8) Installing readline (8.2.10-r0)
+2024-11-12 13:56:06,037 - INFO - Build log for devopscookbook-monitoringandperformance: (4/8) Installing bash (5.2.26-r0)
+2024-11-12 13:56:06,037 - INFO - Build log for devopscookbook-monitoringandperformance: Executing bash-5.2.26-r0.post-install
+2024-11-12 13:56:06,037 - INFO - Build log for devopscookbook-monitoringandperformance: (5/8) Installing libintl (0.22.5-r0)
+2024-11-12 13:56:06,037 - INFO - Build log for devopscookbook-monitoringandperformance: (6/8) Installing libproc2 (4.0.4-r0)
+2024-11-12 13:56:06,037 - INFO - Build log for devopscookbook-monitoringandperformance: (7/8) Installing procps-ng (4.0.4-r0)
+2024-11-12 13:56:06,037 - INFO - Build log for devopscookbook-monitoringandperformance: (8/8) Installing sysstat (12.6.2-r0)
+2024-11-12 13:56:06,038 - INFO - Build log for devopscookbook-monitoringandperformance: Executing busybox-1.36.1-r29.trigger
+2024-11-12 13:56:06,038 - INFO - Build log for devopscookbook-monitoringandperformance: OK: 11 MiB in 22 packages
+2024-11-12 13:56:06,038 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 34fd0fb48a03
+2024-11-12 13:56:06,038 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 9ffa9026ebe6
+2024-11-12 13:56:06,038 - INFO - Build log for devopscookbook-monitoringandperformance: Step 3/11 : WORKDIR /scripts
+2024-11-12 13:56:06,039 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 14822e01f25b
+2024-11-12 13:56:06,039 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 14822e01f25b
+2024-11-12 13:56:06,039 - INFO - Build log for devopscookbook-monitoringandperformance: ---> c6417021b27a
+2024-11-12 13:56:06,039 - INFO - Build log for devopscookbook-monitoringandperformance: Step 4/11 : COPY ApplicationMonitoring/*.sh /scripts/
+2024-11-12 13:56:06,039 - INFO - Build log for devopscookbook-monitoringandperformance: ---> a3db05a6712b
+2024-11-12 13:56:06,040 - INFO - Build log for devopscookbook-monitoringandperformance: Step 5/11 : COPY LogMonitoring/*.sh /scripts/
+2024-11-12 13:56:06,040 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 0034f3b923ed
+2024-11-12 13:56:06,040 - INFO - Build log for devopscookbook-monitoringandperformance: Step 6/11 : COPY PerformanceTuning/*.sh /scripts/
+2024-11-12 13:56:06,040 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 09cd3830027c
+2024-11-12 13:56:06,041 - INFO - Build log for devopscookbook-monitoringandperformance: Step 7/11 : COPY SystemMonitoring/*.sh /scripts/
+2024-11-12 13:56:06,041 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 552ca2c160fe
+2024-11-12 13:56:06,041 - INFO - Build log for devopscookbook-monitoringandperformance: Step 8/11 : RUN chmod +x /scripts/*.sh
+2024-11-12 13:56:06,041 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 37b9e9beb282
+2024-11-12 13:56:06,042 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 37b9e9beb282
+2024-11-12 13:56:06,042 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 9c9dc5cb6433
+2024-11-12 13:56:06,042 - INFO - Build log for devopscookbook-monitoringandperformance: Step 9/11 : RUN mkdir -p /logs
+2024-11-12 13:56:06,042 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 1db2424f530f
+2024-11-12 13:56:06,042 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 1db2424f530f
+2024-11-12 13:56:06,043 - INFO - Build log for devopscookbook-monitoringandperformance: ---> a7e2cade9bcd
+2024-11-12 13:56:06,043 - INFO - Build log for devopscookbook-monitoringandperformance: Step 10/11 : RUN echo '#!/bin/bash' > /scripts/run_all.sh &&     for script in /scripts/*.sh; do         echo "$script" >> /scripts/run_all.sh;     done &&     chmod +x /scripts/run_all.sh
+2024-11-12 13:56:06,043 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in a74ba4d1a424
+2024-11-12 13:56:06,043 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container a74ba4d1a424
+2024-11-12 13:56:06,043 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 742b587c5b6d
+2024-11-12 13:56:06,044 - INFO - Build log for devopscookbook-monitoringandperformance: Step 11/11 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 13:56:06,044 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 8aabb770e1f6
+2024-11-12 13:56:06,044 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 8aabb770e1f6
+2024-11-12 13:56:06,044 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 577d82350473
+2024-11-12 13:56:06,044 - INFO - Build log for devopscookbook-monitoringandperformance: Successfully built 577d82350473
+2024-11-12 13:56:06,044 - INFO - Build log for devopscookbook-monitoringandperformance: Successfully tagged devopscookbook-monitoringandperformance:latest
+2024-11-12 13:56:06,046 - INFO - Running container for image: devopscookbook-monitoringandperformance...
+2024-11-12 13:56:06,470 - INFO - Container started successfully for image: devopscookbook-monitoringandperformance
+2024-11-12 13:56:06,471 - INFO - Skipping non-directory: monitor_docker.py
+2024-11-12 13:56:06,472 - INFO - Checking directory: Networking
+2024-11-12 13:56:06,473 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+2024-11-12 13:56:06,474 - INFO - Building Docker image: devopscookbook-networking from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile...
+2024-11-12 13:56:15,426 - INFO - Successfully built Docker image: devopscookbook-networking
+2024-11-12 13:56:15,427 - INFO - Build log for devopscookbook-networking: Step 1/8 : FROM alpine:latest
+2024-11-12 13:56:15,427 - INFO - Build log for devopscookbook-networking: ---> 91ef0af61f39
+2024-11-12 13:56:15,427 - INFO - Build log for devopscookbook-networking: Step 2/8 : RUN apk update && apk add --no-cache bash iproute2 net-tools iputils bind-tools
+2024-11-12 13:56:15,428 - INFO - Build log for devopscookbook-networking: ---> Running in c7da84eb77df
+2024-11-12 13:56:15,430 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:15,430 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:15,430 - INFO - Build log for devopscookbook-networking: v3.20.3-302-ga2d31895692 [https://dl-cdn.alpinelinux.org/alpine/v3.20/main]
+v3.20.3-303-gb38821c39e5 [https://dl-cdn.alpinelinux.org/alpine/v3.20/community]
+OK: 24168 distinct packages available
+2024-11-12 13:56:15,431 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:15,431 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 13:56:15,431 - INFO - Build log for devopscookbook-networking: (1/34) Installing ncurses-terminfo-base (6.4_p20240420-r1)
+2024-11-12 13:56:15,432 - INFO - Build log for devopscookbook-networking: (2/34) Installing libncursesw (6.4_p20240420-r1)
+2024-11-12 13:56:15,432 - INFO - Build log for devopscookbook-networking: (3/34) Installing readline (8.2.10-r0)
+2024-11-12 13:56:15,433 - INFO - Build log for devopscookbook-networking: (4/34) Installing bash (5.2.26-r0)
+2024-11-12 13:56:15,433 - INFO - Build log for devopscookbook-networking: Executing bash-5.2.26-r0.post-install
+2024-11-12 13:56:15,433 - INFO - Build log for devopscookbook-networking: (5/34) Installing fstrm (0.6.1-r4)
+2024-11-12 13:56:15,434 - INFO - Build log for devopscookbook-networking: (6/34) Installing krb5-conf (1.0-r2)
+2024-11-12 13:56:15,434 - INFO - Build log for devopscookbook-networking: (7/34) Installing libcom_err (1.47.0-r5)
+2024-11-12 13:56:15,434 - INFO - Build log for devopscookbook-networking: (8/34) Installing keyutils-libs (1.6.3-r3)
+2024-11-12 13:56:15,435 - INFO - Build log for devopscookbook-networking: (9/34) Installing libverto (0.3.2-r2)
+2024-11-12 13:56:15,435 - INFO - Build log for devopscookbook-networking: (10/34) Installing krb5-libs (1.21.3-r0)
+2024-11-12 13:56:15,435 - INFO - Build log for devopscookbook-networking: (11/34) Installing json-c (0.17-r0)
+2024-11-12 13:56:15,435 - INFO - Build log for devopscookbook-networking: (12/34) Installing nghttp2-libs (1.62.1-r0)
+2024-11-12 13:56:15,435 - INFO - Build log for devopscookbook-networking: (13/34) Installing protobuf-c (1.5.0-r0)
+2024-11-12 13:56:15,436 - INFO - Build log for devopscookbook-networking: (14/34) Installing libuv (1.48.0-r0)
+2024-11-12 13:56:15,436 - INFO - Build log for devopscookbook-networking: (15/34) Installing xz-libs (5.6.2-r0)
+2024-11-12 13:56:15,436 - INFO - Build log for devopscookbook-networking: (16/34) Installing libxml2 (2.12.7-r0)
+2024-11-12 13:56:15,436 - INFO - Build log for devopscookbook-networking: (17/34) Installing bind-libs (9.18.27-r0)
+2024-11-12 13:56:15,436 - INFO - Build log for devopscookbook-networking: (18/34) Installing bind-tools (9.18.27-r0)
+2024-11-12 13:56:15,437 - INFO - Build log for devopscookbook-networking: (19/34) Installing libcap2 (2.70-r0)
+2024-11-12 13:56:15,437 - INFO - Build log for devopscookbook-networking: (20/34) Installing zstd-libs (1.5.6-r0)
+2024-11-12 13:56:15,437 - INFO - Build log for devopscookbook-networking: (21/34) Installing libelf (0.191-r0)
+2024-11-12 13:56:15,437 - INFO - Build log for devopscookbook-networking: (22/34) Installing libmnl (1.0.5-r2)
+2024-11-12 13:56:15,437 - INFO - Build log for devopscookbook-networking: (23/34) Installing iproute2-minimal (6.9.0-r0)
+2024-11-12 13:56:15,437 - INFO - Build log for devopscookbook-networking: (24/34) Installing libxtables (1.8.10-r3)
+2024-11-12 13:56:15,438 - INFO - Build log for devopscookbook-networking: (25/34) Installing iproute2-tc (6.9.0-r0)
+2024-11-12 13:56:15,438 - INFO - Build log for devopscookbook-networking: (26/34) Installing iproute2-ss (6.9.0-r0)
+2024-11-12 13:56:15,438 - INFO - Build log for devopscookbook-networking: (27/34) Installing iproute2 (6.9.0-r0)
+2024-11-12 13:56:15,438 - INFO - Build log for devopscookbook-networking: Executing iproute2-6.9.0-r0.post-install
+2024-11-12 13:56:15,439 - INFO - Build log for devopscookbook-networking: (28/34) Installing iputils-arping (20240117-r0)
+2024-11-12 13:56:15,439 - INFO - Build log for devopscookbook-networking: (29/34) Installing iputils-clockdiff (20240117-r0)
+2024-11-12 13:56:15,439 - INFO - Build log for devopscookbook-networking: (30/34) Installing iputils-ping (20240117-r0)
+2024-11-12 13:56:15,439 - INFO - Build log for devopscookbook-networking: (31/34) Installing iputils-tracepath (20240117-r0)
+2024-11-12 13:56:15,439 - INFO - Build log for devopscookbook-networking: (32/34) Installing iputils (20240117-r0)
+2024-11-12 13:56:15,440 - INFO - Build log for devopscookbook-networking: (33/34) Installing mii-tool (2.10-r3)
+2024-11-12 13:56:15,440 - INFO - Build log for devopscookbook-networking: (34/34) Installing net-tools (2.10-r3)
+2024-11-12 13:56:15,440 - INFO - Build log for devopscookbook-networking: Executing busybox-1.36.1-r29.trigger
+2024-11-12 13:56:15,440 - INFO - Build log for devopscookbook-networking: OK: 20 MiB in 48 packages
+2024-11-12 13:56:15,440 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container c7da84eb77df
+2024-11-12 13:56:15,441 - INFO - Build log for devopscookbook-networking: ---> c5aec64f79f4
+2024-11-12 13:56:15,441 - INFO - Build log for devopscookbook-networking: Step 3/8 : WORKDIR /scripts
+2024-11-12 13:56:15,441 - INFO - Build log for devopscookbook-networking: ---> Running in 7616c9275e80
+2024-11-12 13:56:15,441 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container 7616c9275e80
+2024-11-12 13:56:15,441 - INFO - Build log for devopscookbook-networking: ---> 2abc3ca0faad
+2024-11-12 13:56:15,442 - INFO - Build log for devopscookbook-networking: Step 4/8 : COPY ./*.sh /scripts/
+2024-11-12 13:56:15,442 - INFO - Build log for devopscookbook-networking: ---> 48144cba2bbf
+2024-11-12 13:56:15,442 - INFO - Build log for devopscookbook-networking: Step 5/8 : RUN chmod +x /scripts/*.sh
+2024-11-12 13:56:15,442 - INFO - Build log for devopscookbook-networking: ---> Running in aac3390c86d0
+2024-11-12 13:56:15,442 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container aac3390c86d0
+2024-11-12 13:56:15,443 - INFO - Build log for devopscookbook-networking: ---> c3616424420b
+2024-11-12 13:56:15,443 - INFO - Build log for devopscookbook-networking: Step 6/8 : RUN mkdir -p /logs
+2024-11-12 13:56:15,443 - INFO - Build log for devopscookbook-networking: ---> Running in a771d179e141
+2024-11-12 13:56:15,443 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container a771d179e141
+2024-11-12 13:56:15,443 - INFO - Build log for devopscookbook-networking: ---> 0cff33e33bd6
+2024-11-12 13:56:15,443 - INFO - Build log for devopscookbook-networking: Step 7/8 : RUN echo '#!/bin/bash' > /scripts/run_all.sh &&     echo '/scripts/network_test.sh' >> /scripts/run_all.sh &&     echo '/scripts/show_active_connections.sh' >> /scripts/run_all.sh &&     echo '/scripts/show_network_config.sh' >> /scripts/run_all.sh &&     chmod +x /scripts/run_all.sh
+2024-11-12 13:56:15,444 - INFO - Build log for devopscookbook-networking: ---> Running in 0b2d252ac68b
+2024-11-12 13:56:15,444 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container 0b2d252ac68b
+2024-11-12 13:56:15,444 - INFO - Build log for devopscookbook-networking: ---> ee7ae1047ee0
+2024-11-12 13:56:15,444 - INFO - Build log for devopscookbook-networking: Step 8/8 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 13:56:15,444 - INFO - Build log for devopscookbook-networking: ---> Running in b438ed99d63e
+2024-11-12 13:56:15,445 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container b438ed99d63e
+2024-11-12 13:56:15,445 - INFO - Build log for devopscookbook-networking: ---> 1f1b08345b92
+2024-11-12 13:56:15,445 - INFO - Build log for devopscookbook-networking: Successfully built 1f1b08345b92
+2024-11-12 13:56:15,445 - INFO - Build log for devopscookbook-networking: Successfully tagged devopscookbook-networking:latest
+2024-11-12 13:56:15,447 - INFO - Running container for image: devopscookbook-networking...
+2024-11-12 13:56:15,813 - INFO - Container started successfully for image: devopscookbook-networking
+2024-11-12 13:56:15,814 - INFO - Skipping non-directory: README.md
+2024-11-12 13:56:15,815 - INFO - Checking directory: SystemAdministration
+2024-11-12 13:56:15,816 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+2024-11-12 13:56:15,817 - INFO - Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+2024-11-12 13:56:15,881 - INFO - Successfully built Docker image: devopscookbook-systemadministration
+2024-11-12 13:56:15,881 - INFO - Build log for devopscookbook-systemadministration: Step 1/7 : FROM alpine:latest
+2024-11-12 13:56:15,881 - INFO - Build log for devopscookbook-systemadministration: ---> 91ef0af61f39
+2024-11-12 13:56:15,881 - INFO - Build log for devopscookbook-systemadministration: Step 2/7 : RUN apk update && apk add bash
+2024-11-12 13:56:15,882 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 13:56:15,882 - INFO - Build log for devopscookbook-systemadministration: ---> b7398c73673f
+2024-11-12 13:56:15,882 - INFO - Build log for devopscookbook-systemadministration: Step 3/7 : WORKDIR /scripts
+2024-11-12 13:56:15,882 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 13:56:15,882 - INFO - Build log for devopscookbook-systemadministration: ---> 6c19d079e200
+2024-11-12 13:56:15,883 - INFO - Build log for devopscookbook-systemadministration: Step 4/7 : COPY ./*.sh /scripts/
+2024-11-12 13:56:15,883 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 13:56:15,883 - INFO - Build log for devopscookbook-systemadministration: ---> 4024b42b1d93
+2024-11-12 13:56:15,883 - INFO - Build log for devopscookbook-systemadministration: Step 5/7 : RUN chmod +x /scripts/*.sh
+2024-11-12 13:56:15,884 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 13:56:15,884 - INFO - Build log for devopscookbook-systemadministration: ---> 4be85b4799c8
+2024-11-12 13:56:15,884 - INFO - Build log for devopscookbook-systemadministration: Step 6/7 : RUN mkdir -p /logs
+2024-11-12 13:56:15,884 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 13:56:15,884 - INFO - Build log for devopscookbook-systemadministration: ---> f1db7e4c697c
+2024-11-12 13:56:15,884 - INFO - Build log for devopscookbook-systemadministration: Step 7/7 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 13:56:15,885 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 13:56:15,885 - INFO - Build log for devopscookbook-systemadministration: ---> b39e8b9c4d20
+2024-11-12 13:56:15,885 - INFO - Build log for devopscookbook-systemadministration: Successfully built b39e8b9c4d20
+2024-11-12 13:56:15,885 - INFO - Build log for devopscookbook-systemadministration: Successfully tagged devopscookbook-systemadministration:latest
+2024-11-12 13:56:15,887 - INFO - Running container for image: devopscookbook-systemadministration...
+2024-11-12 13:56:16,261 - INFO - Container started successfully for image: devopscookbook-systemadministration
+2024-11-12 13:56:16,262 - INFO - Checking directory: tests
+2024-11-12 13:56:16,263 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+2024-11-12 13:56:16,264 - WARNING - No Dockerfile found in the 'tests' directory.
+2024-11-12 13:56:16,265 - INFO - Skipping non-directory: test_containers.log
+2024-11-12 13:56:16,266 - INFO - Docker Build and Run Results:
++-----------------------------------------------------+-------------------+
+|                     Image Name                      |   Build Status    |
++-----------------------------------------------------+-------------------+
+|                    .pytest_cache                    |   No Dockerfile   |
+| devopscookbook-automationandconfigurationmanagement | Built and Running |
+|                  DockerManagement                   |   No Dockerfile   |
+|                     DockerSetup                     |   No Dockerfile   |
+|          devopscookbook-linuxfundamentals           | Built and Running |
+|                        logs                         |   No Dockerfile   |
+|       devopscookbook-monitoringandperformance       | Built and Running |
+|              devopscookbook-networking              | Built and Running |
+|         devopscookbook-systemadministration         | Built and Running |
+|                        tests                        |   No Dockerfile   |
++-----------------------------------------------------+-------------------+
+2024-11-12 13:56:16,267 - INFO - Listing all running Docker containers:
+2024-11-12 13:56:16,278 - INFO - Running Docker Containers:
++---------------------------------------------------------------+--------------+---------+
+|                        Container Name                         |      ID      | Status  |
++---------------------------------------------------------------+--------------+---------+
+|         devopscookbook-systemadministration-container         | db94355efa02 | running |
+|              devopscookbook-networking-container              | 9bd9d3d54d11 | running |
+|       devopscookbook-monitoringandperformance-container       | 0db9df9a8e7d | running |
+|          devopscookbook-linuxfundamentals-container           | 0b685a348b95 | running |
+| devopscookbook-automationandconfigurationmanagement-container | 270a7fac8e3d | running |
++---------------------------------------------------------------+--------------+---------+
+2024-11-12 14:44:42,802 - INFO - Docker client version: 27.0.3
+2024-11-12 14:44:42,803 - INFO - Base directory for project: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+2024-11-12 14:44:42,805 - INFO - Checking directory: .pytest_cache
+2024-11-12 14:44:42,806 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest_cache/Dockerfile
+2024-11-12 14:44:42,807 - WARNING - No Dockerfile found in the '.pytest_cache' directory.
+2024-11-12 14:44:42,807 - INFO - Checking directory: AutomationAndConfigurationManagement
+2024-11-12 14:44:42,808 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
+2024-11-12 14:44:42,809 - INFO - Building Docker image: devopscookbook-automationandconfigurationmanagement from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile...
+2024-11-12 14:44:54,120 - INFO - Successfully built Docker image: devopscookbook-automationandconfigurationmanagement
+2024-11-12 14:44:54,121 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 1/8 : FROM alpine:latest
+2024-11-12 14:44:54,121 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 63b790fccc90
+2024-11-12 14:44:54,121 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 2/8 : RUN apk update && apk add --no-cache bash
+2024-11-12 14:44:54,122 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in d65210f4fe41
+2024-11-12 14:44:54,122 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 14:44:54,122 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 14:44:54,122 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: v3.20.3-302-ga2d31895692 [https://dl-cdn.alpinelinux.org/alpine/v3.20/main]
+v3.20.3-303-gb38821c39e5 [https://dl-cdn.alpinelinux.org/alpine/v3.20/community]
+OK: 24168 distinct packages available
+2024-11-12 14:44:54,123 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 14:44:54,123 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 14:44:54,123 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (1/4) Installing ncurses-terminfo-base (6.4_p20240420-r1)
+2024-11-12 14:44:54,123 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (2/4) Installing libncursesw (6.4_p20240420-r1)
+2024-11-12 14:44:54,124 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (3/4) Installing readline (8.2.10-r0)
+2024-11-12 14:44:54,124 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: (4/4) Installing bash (5.2.26-r0)
+2024-11-12 14:44:54,124 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Executing bash-5.2.26-r0.post-install
+2024-11-12 14:44:54,124 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Executing busybox-1.36.1-r29.trigger
+2024-11-12 14:44:54,124 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: OK: 10 MiB in 18 packages
+2024-11-12 14:44:54,125 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container d65210f4fe41
+2024-11-12 14:44:54,125 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> e0049e00a520
+2024-11-12 14:44:54,125 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 3/8 : WORKDIR /scripts
+2024-11-12 14:44:54,125 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in b3441f75cc95
+2024-11-12 14:44:54,126 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container b3441f75cc95
+2024-11-12 14:44:54,126 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 4bef0462a47b
+2024-11-12 14:44:54,126 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 4/8 : COPY ./*.sh /scripts/
+2024-11-12 14:44:54,126 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 385161ca28c5
+2024-11-12 14:44:54,126 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 5/8 : RUN chmod +x /scripts/*.sh
+2024-11-12 14:44:54,127 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in 3c339c9b5f65
+2024-11-12 14:44:54,127 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container 3c339c9b5f65
+2024-11-12 14:44:54,127 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> eb163181cd9b
+2024-11-12 14:44:54,128 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 6/8 : RUN mkdir -p /logs
+2024-11-12 14:44:54,128 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in fc78a02f208e
+2024-11-12 14:44:54,128 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container fc78a02f208e
+2024-11-12 14:44:54,129 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 2d852db765f4
+2024-11-12 14:44:54,129 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 7/8 : RUN echo '#!/bin/bash' > /scripts/run_all.sh &&     echo '/scripts/cron_job_setup.sh' >> /scripts/run_all.sh &&     echo '/scripts/install_salt.sh' >> /scripts/run_all.sh &&     echo '/scripts/install_terraform.sh' >> /scripts/run_all.sh &&     chmod +x /scripts/run_all.sh
+2024-11-12 14:44:54,129 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in 7223f6acd3e4
+2024-11-12 14:44:54,129 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container 7223f6acd3e4
+2024-11-12 14:44:54,129 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 1584313172ef
+2024-11-12 14:44:54,130 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Step 8/8 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 14:44:54,130 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Running in 10452efdc1e2
+2024-11-12 14:44:54,130 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> Removed intermediate container 10452efdc1e2
+2024-11-12 14:44:54,130 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: ---> 613911f24a35
+2024-11-12 14:44:54,131 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Successfully built 613911f24a35
+2024-11-12 14:44:54,131 - INFO - Build log for devopscookbook-automationandconfigurationmanagement: Successfully tagged devopscookbook-automationandconfigurationmanagement:latest
+2024-11-12 14:44:54,133 - INFO - Running container for image: devopscookbook-automationandconfigurationmanagement...
+2024-11-12 14:44:54,579 - INFO - Container started successfully for image: devopscookbook-automationandconfigurationmanagement
+2024-11-12 14:44:54,581 - INFO - Skipping non-directory: directory_structure.txt
+2024-11-12 14:44:54,582 - INFO - Checking directory: DockerManagement
+2024-11-12 14:44:54,582 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
+2024-11-12 14:44:54,583 - WARNING - No Dockerfile found in the 'DockerManagement' directory.
+2024-11-12 14:44:54,584 - INFO - Checking directory: DockerSetup
+2024-11-12 14:44:54,584 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
+2024-11-12 14:44:54,584 - WARNING - No Dockerfile found in the 'DockerSetup' directory.
+2024-11-12 14:44:54,585 - INFO - Skipping non-directory: docker_troubleshoot_commands.sh
+2024-11-12 14:44:54,586 - INFO - Checking directory: LinuxFundamentals
+2024-11-12 14:44:54,587 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
+2024-11-12 14:44:54,588 - INFO - Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
+2024-11-12 14:44:59,736 - INFO - Successfully built Docker image: devopscookbook-linuxfundamentals
+2024-11-12 14:44:59,736 - INFO - Build log for devopscookbook-linuxfundamentals: Step 1/7 : FROM alpine:latest
+2024-11-12 14:44:59,737 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 63b790fccc90
+2024-11-12 14:44:59,737 - INFO - Build log for devopscookbook-linuxfundamentals: Step 2/7 : RUN apk update && apk add bash
+2024-11-12 14:44:59,737 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Running in 268d1493028c
+2024-11-12 14:44:59,737 - INFO - Build log for devopscookbook-linuxfundamentals: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 14:44:59,738 - INFO - Build log for devopscookbook-linuxfundamentals: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 14:44:59,738 - INFO - Build log for devopscookbook-linuxfundamentals: v3.20.3-302-ga2d31895692 [https://dl-cdn.alpinelinux.org/alpine/v3.20/main]
+v3.20.3-303-gb38821c39e5 [https://dl-cdn.alpinelinux.org/alpine/v3.20/community]
+OK: 24168 distinct packages available
+2024-11-12 14:44:59,738 - INFO - Build log for devopscookbook-linuxfundamentals: (1/4) Installing ncurses-terminfo-base (6.4_p20240420-r1)
+2024-11-12 14:44:59,738 - INFO - Build log for devopscookbook-linuxfundamentals: (2/4) Installing libncursesw (6.4_p20240420-r1)
+2024-11-12 14:44:59,739 - INFO - Build log for devopscookbook-linuxfundamentals: (3/4) Installing readline (8.2.10-r0)
+2024-11-12 14:44:59,739 - INFO - Build log for devopscookbook-linuxfundamentals: (4/4) Installing bash (5.2.26-r0)
+2024-11-12 14:44:59,739 - INFO - Build log for devopscookbook-linuxfundamentals: Executing bash-5.2.26-r0.post-install
+2024-11-12 14:44:59,739 - INFO - Build log for devopscookbook-linuxfundamentals: Executing busybox-1.36.1-r29.trigger
+2024-11-12 14:44:59,739 - INFO - Build log for devopscookbook-linuxfundamentals: OK: 10 MiB in 18 packages
+2024-11-12 14:44:59,740 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Removed intermediate container 268d1493028c
+2024-11-12 14:44:59,740 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 45f3a0a8a73e
+2024-11-12 14:44:59,740 - INFO - Build log for devopscookbook-linuxfundamentals: Step 3/7 : WORKDIR /scripts
+2024-11-12 14:44:59,741 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Running in eadd68878595
+2024-11-12 14:44:59,741 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Removed intermediate container eadd68878595
+2024-11-12 14:44:59,741 - INFO - Build log for devopscookbook-linuxfundamentals: ---> a9c29f6f9773
+2024-11-12 14:44:59,741 - INFO - Build log for devopscookbook-linuxfundamentals: Step 4/7 : COPY ./*.sh /scripts/
+2024-11-12 14:44:59,742 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 1236b648d821
+2024-11-12 14:44:59,742 - INFO - Build log for devopscookbook-linuxfundamentals: Step 5/7 : RUN chmod +x /scripts/*.sh
+2024-11-12 14:44:59,742 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Running in 7f7d3fdad0cb
+2024-11-12 14:44:59,742 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Removed intermediate container 7f7d3fdad0cb
+2024-11-12 14:44:59,743 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 1e70e5a53f74
+2024-11-12 14:44:59,743 - INFO - Build log for devopscookbook-linuxfundamentals: Step 6/7 : RUN mkdir -p /logs
+2024-11-12 14:44:59,743 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Running in 77fc28660485
+2024-11-12 14:44:59,743 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Removed intermediate container 77fc28660485
+2024-11-12 14:44:59,743 - INFO - Build log for devopscookbook-linuxfundamentals: ---> ae800df14403
+2024-11-12 14:44:59,744 - INFO - Build log for devopscookbook-linuxfundamentals: Step 7/7 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 14:44:59,744 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Running in 8b3b9c5af1c0
+2024-11-12 14:44:59,744 - INFO - Build log for devopscookbook-linuxfundamentals: ---> Removed intermediate container 8b3b9c5af1c0
+2024-11-12 14:44:59,744 - INFO - Build log for devopscookbook-linuxfundamentals: ---> 75e19dd318fb
+2024-11-12 14:44:59,744 - INFO - Build log for devopscookbook-linuxfundamentals: Successfully built 75e19dd318fb
+2024-11-12 14:44:59,745 - INFO - Build log for devopscookbook-linuxfundamentals: Successfully tagged devopscookbook-linuxfundamentals:latest
+2024-11-12 14:44:59,747 - INFO - Running container for image: devopscookbook-linuxfundamentals...
+2024-11-12 14:45:00,108 - INFO - Container started successfully for image: devopscookbook-linuxfundamentals
+2024-11-12 14:45:00,109 - INFO - Checking directory: logs
+2024-11-12 14:45:00,109 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
+2024-11-12 14:45:00,110 - WARNING - No Dockerfile found in the 'logs' directory.
+2024-11-12 14:45:00,110 - INFO - Skipping non-directory: main_setup.sh
+2024-11-12 14:45:00,111 - INFO - Skipping non-directory: make_scripts_executable.sh
+2024-11-12 14:45:00,112 - INFO - Checking directory: MonitoringAndPerformance
+2024-11-12 14:45:00,112 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
+2024-11-12 14:45:00,114 - INFO - Building Docker image: devopscookbook-monitoringandperformance from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile...
+2024-11-12 14:45:07,606 - INFO - Successfully built Docker image: devopscookbook-monitoringandperformance
+2024-11-12 14:45:07,606 - INFO - Build log for devopscookbook-monitoringandperformance: Step 1/11 : FROM alpine:latest
+2024-11-12 14:45:07,607 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 63b790fccc90
+2024-11-12 14:45:07,607 - INFO - Build log for devopscookbook-monitoringandperformance: Step 2/11 : RUN apk update && apk add --no-cache bash sysstat procps
+2024-11-12 14:45:07,607 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in ca6ff22a1e1c
+2024-11-12 14:45:07,608 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:07,608 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:07,608 - INFO - Build log for devopscookbook-monitoringandperformance: v3.20.3-302-ga2d31895692 [https://dl-cdn.alpinelinux.org/alpine/v3.20/main]
+v3.20.3-303-gb38821c39e5 [https://dl-cdn.alpinelinux.org/alpine/v3.20/community]
+OK: 24168 distinct packages available
+2024-11-12 14:45:07,608 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:07,608 - INFO - Build log for devopscookbook-monitoringandperformance: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:07,609 - INFO - Build log for devopscookbook-monitoringandperformance: (1/8) Installing ncurses-terminfo-base (6.4_p20240420-r1)
+2024-11-12 14:45:07,609 - INFO - Build log for devopscookbook-monitoringandperformance: (2/8) Installing libncursesw (6.4_p20240420-r1)
+2024-11-12 14:45:07,609 - INFO - Build log for devopscookbook-monitoringandperformance: (3/8) Installing readline (8.2.10-r0)
+2024-11-12 14:45:07,609 - INFO - Build log for devopscookbook-monitoringandperformance: (4/8) Installing bash (5.2.26-r0)
+2024-11-12 14:45:07,609 - INFO - Build log for devopscookbook-monitoringandperformance: Executing bash-5.2.26-r0.post-install
+2024-11-12 14:45:07,610 - INFO - Build log for devopscookbook-monitoringandperformance: (5/8) Installing libintl (0.22.5-r0)
+2024-11-12 14:45:07,610 - INFO - Build log for devopscookbook-monitoringandperformance: (6/8) Installing libproc2 (4.0.4-r0)
+2024-11-12 14:45:07,610 - INFO - Build log for devopscookbook-monitoringandperformance: (7/8) Installing procps-ng (4.0.4-r0)
+2024-11-12 14:45:07,610 - INFO - Build log for devopscookbook-monitoringandperformance: (8/8) Installing sysstat (12.6.2-r0)
+2024-11-12 14:45:07,611 - INFO - Build log for devopscookbook-monitoringandperformance: Executing busybox-1.36.1-r29.trigger
+2024-11-12 14:45:07,611 - INFO - Build log for devopscookbook-monitoringandperformance: OK: 11 MiB in 22 packages
+2024-11-12 14:45:07,611 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container ca6ff22a1e1c
+2024-11-12 14:45:07,611 - INFO - Build log for devopscookbook-monitoringandperformance: ---> b6661f1c873a
+2024-11-12 14:45:07,612 - INFO - Build log for devopscookbook-monitoringandperformance: Step 3/11 : WORKDIR /scripts
+2024-11-12 14:45:07,612 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in bf66f027462c
+2024-11-12 14:45:07,612 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container bf66f027462c
+2024-11-12 14:45:07,612 - INFO - Build log for devopscookbook-monitoringandperformance: ---> fe7edf1efc88
+2024-11-12 14:45:07,613 - INFO - Build log for devopscookbook-monitoringandperformance: Step 4/11 : COPY ApplicationMonitoring/*.sh /scripts/
+2024-11-12 14:45:07,613 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 11193a149a8c
+2024-11-12 14:45:07,613 - INFO - Build log for devopscookbook-monitoringandperformance: Step 5/11 : COPY LogMonitoring/*.sh /scripts/
+2024-11-12 14:45:07,613 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 76825e8a07e1
+2024-11-12 14:45:07,613 - INFO - Build log for devopscookbook-monitoringandperformance: Step 6/11 : COPY PerformanceTuning/*.sh /scripts/
+2024-11-12 14:45:07,614 - INFO - Build log for devopscookbook-monitoringandperformance: ---> cf8123e48219
+2024-11-12 14:45:07,614 - INFO - Build log for devopscookbook-monitoringandperformance: Step 7/11 : COPY SystemMonitoring/*.sh /scripts/
+2024-11-12 14:45:07,614 - INFO - Build log for devopscookbook-monitoringandperformance: ---> d17b592e5099
+2024-11-12 14:45:07,614 - INFO - Build log for devopscookbook-monitoringandperformance: Step 8/11 : RUN chmod +x /scripts/*.sh
+2024-11-12 14:45:07,614 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 8a11b9bf78f1
+2024-11-12 14:45:07,615 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 8a11b9bf78f1
+2024-11-12 14:45:07,615 - INFO - Build log for devopscookbook-monitoringandperformance: ---> afc76b5d1017
+2024-11-12 14:45:07,615 - INFO - Build log for devopscookbook-monitoringandperformance: Step 9/11 : RUN mkdir -p /logs
+2024-11-12 14:45:07,615 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 43e9b0501354
+2024-11-12 14:45:07,615 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 43e9b0501354
+2024-11-12 14:45:07,616 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 848976b0cfc8
+2024-11-12 14:45:07,616 - INFO - Build log for devopscookbook-monitoringandperformance: Step 10/11 : RUN echo '#!/bin/bash' > /scripts/run_all.sh &&     for script in /scripts/*.sh; do         echo "$script" >> /scripts/run_all.sh;     done &&     chmod +x /scripts/run_all.sh
+2024-11-12 14:45:07,616 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in 6f7f26f78fb0
+2024-11-12 14:45:07,616 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container 6f7f26f78fb0
+2024-11-12 14:45:07,616 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 5bdda3941027
+2024-11-12 14:45:07,617 - INFO - Build log for devopscookbook-monitoringandperformance: Step 11/11 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 14:45:07,617 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Running in b0b39aef3d26
+2024-11-12 14:45:07,617 - INFO - Build log for devopscookbook-monitoringandperformance: ---> Removed intermediate container b0b39aef3d26
+2024-11-12 14:45:07,617 - INFO - Build log for devopscookbook-monitoringandperformance: ---> 079c45f6fa5e
+2024-11-12 14:45:07,618 - INFO - Build log for devopscookbook-monitoringandperformance: Successfully built 079c45f6fa5e
+2024-11-12 14:45:07,618 - INFO - Build log for devopscookbook-monitoringandperformance: Successfully tagged devopscookbook-monitoringandperformance:latest
+2024-11-12 14:45:07,620 - INFO - Running container for image: devopscookbook-monitoringandperformance...
+2024-11-12 14:45:08,140 - INFO - Container started successfully for image: devopscookbook-monitoringandperformance
+2024-11-12 14:45:08,141 - INFO - Skipping non-directory: monitor_docker.py
+2024-11-12 14:45:08,142 - INFO - Checking directory: Networking
+2024-11-12 14:45:08,142 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
+2024-11-12 14:45:08,144 - INFO - Building Docker image: devopscookbook-networking from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile...
+2024-11-12 14:45:17,220 - INFO - Successfully built Docker image: devopscookbook-networking
+2024-11-12 14:45:17,220 - INFO - Build log for devopscookbook-networking: Step 1/8 : FROM alpine:latest
+2024-11-12 14:45:17,221 - INFO - Build log for devopscookbook-networking: ---> 63b790fccc90
+2024-11-12 14:45:17,221 - INFO - Build log for devopscookbook-networking: Step 2/8 : RUN apk update && apk add --no-cache bash iproute2 net-tools iputils bind-tools
+2024-11-12 14:45:17,221 - INFO - Build log for devopscookbook-networking: ---> Running in 44e0e3c3f993
+2024-11-12 14:45:17,221 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:17,222 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:17,222 - INFO - Build log for devopscookbook-networking: v3.20.3-302-ga2d31895692 [https://dl-cdn.alpinelinux.org/alpine/v3.20/main]
+v3.20.3-303-gb38821c39e5 [https://dl-cdn.alpinelinux.org/alpine/v3.20/community]
+OK: 24168 distinct packages available
+2024-11-12 14:45:17,222 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:17,222 - INFO - Build log for devopscookbook-networking: fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+2024-11-12 14:45:17,223 - INFO - Build log for devopscookbook-networking: (1/34) Installing ncurses-terminfo-base (6.4_p20240420-r1)
+2024-11-12 14:45:17,223 - INFO - Build log for devopscookbook-networking: (2/34) Installing libncursesw (6.4_p20240420-r1)
+2024-11-12 14:45:17,223 - INFO - Build log for devopscookbook-networking: (3/34) Installing readline (8.2.10-r0)
+2024-11-12 14:45:17,223 - INFO - Build log for devopscookbook-networking: (4/34) Installing bash (5.2.26-r0)
+2024-11-12 14:45:17,223 - INFO - Build log for devopscookbook-networking: Executing bash-5.2.26-r0.post-install
+2024-11-12 14:45:17,224 - INFO - Build log for devopscookbook-networking: (5/34) Installing fstrm (0.6.1-r4)
+2024-11-12 14:45:17,224 - INFO - Build log for devopscookbook-networking: (6/34) Installing krb5-conf (1.0-r2)
+2024-11-12 14:45:17,224 - INFO - Build log for devopscookbook-networking: (7/34) Installing libcom_err (1.47.0-r5)
+2024-11-12 14:45:17,224 - INFO - Build log for devopscookbook-networking: (8/34) Installing keyutils-libs (1.6.3-r3)
+2024-11-12 14:45:17,225 - INFO - Build log for devopscookbook-networking: (9/34) Installing libverto (0.3.2-r2)
+2024-11-12 14:45:17,225 - INFO - Build log for devopscookbook-networking: (10/34) Installing krb5-libs (1.21.3-r0)
+2024-11-12 14:45:17,225 - INFO - Build log for devopscookbook-networking: (11/34) Installing json-c (0.17-r0)
+2024-11-12 14:45:17,226 - INFO - Build log for devopscookbook-networking: (12/34) Installing nghttp2-libs (1.62.1-r0)
+2024-11-12 14:45:17,226 - INFO - Build log for devopscookbook-networking: (13/34) Installing protobuf-c (1.5.0-r0)
+2024-11-12 14:45:17,226 - INFO - Build log for devopscookbook-networking: (14/34) Installing libuv (1.48.0-r0)
+2024-11-12 14:45:17,226 - INFO - Build log for devopscookbook-networking: (15/34) Installing xz-libs (5.6.2-r0)
+2024-11-12 14:45:17,227 - INFO - Build log for devopscookbook-networking: (16/34) Installing libxml2 (2.12.7-r0)
+2024-11-12 14:45:17,227 - INFO - Build log for devopscookbook-networking: (17/34) Installing bind-libs (9.18.27-r0)
+2024-11-12 14:45:17,227 - INFO - Build log for devopscookbook-networking: (18/34) Installing bind-tools (9.18.27-r0)
+2024-11-12 14:45:17,227 - INFO - Build log for devopscookbook-networking: (19/34) Installing libcap2 (2.70-r0)
+2024-11-12 14:45:17,227 - INFO - Build log for devopscookbook-networking: (20/34) Installing zstd-libs (1.5.6-r0)
+2024-11-12 14:45:17,228 - INFO - Build log for devopscookbook-networking: (21/34) Installing libelf (0.191-r0)
+2024-11-12 14:45:17,228 - INFO - Build log for devopscookbook-networking: (22/34) Installing libmnl (1.0.5-r2)
+2024-11-12 14:45:17,228 - INFO - Build log for devopscookbook-networking: (23/34) Installing iproute2-minimal (6.9.0-r0)
+2024-11-12 14:45:17,228 - INFO - Build log for devopscookbook-networking: (24/34) Installing libxtables (1.8.10-r3)
+2024-11-12 14:45:17,229 - INFO - Build log for devopscookbook-networking: (25/34) Installing iproute2-tc (6.9.0-r0)
+2024-11-12 14:45:17,229 - INFO - Build log for devopscookbook-networking: (26/34) Installing iproute2-ss (6.9.0-r0)
+2024-11-12 14:45:17,229 - INFO - Build log for devopscookbook-networking: (27/34) Installing iproute2 (6.9.0-r0)
+2024-11-12 14:45:17,229 - INFO - Build log for devopscookbook-networking: Executing iproute2-6.9.0-r0.post-install
+2024-11-12 14:45:17,230 - INFO - Build log for devopscookbook-networking: (28/34) Installing iputils-arping (20240117-r0)
+2024-11-12 14:45:17,230 - INFO - Build log for devopscookbook-networking: (29/34) Installing iputils-clockdiff (20240117-r0)
+2024-11-12 14:45:17,230 - INFO - Build log for devopscookbook-networking: (30/34) Installing iputils-ping (20240117-r0)
+2024-11-12 14:45:17,230 - INFO - Build log for devopscookbook-networking: (31/34) Installing iputils-tracepath (20240117-r0)
+2024-11-12 14:45:17,231 - INFO - Build log for devopscookbook-networking: (32/34) Installing iputils (20240117-r0)
+2024-11-12 14:45:17,231 - INFO - Build log for devopscookbook-networking: (33/34) Installing mii-tool (2.10-r3)
+2024-11-12 14:45:17,231 - INFO - Build log for devopscookbook-networking: (34/34) Installing net-tools (2.10-r3)
+2024-11-12 14:45:17,232 - INFO - Build log for devopscookbook-networking: Executing busybox-1.36.1-r29.trigger
+2024-11-12 14:45:17,232 - INFO - Build log for devopscookbook-networking: OK: 20 MiB in 48 packages
+2024-11-12 14:45:17,232 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container 44e0e3c3f993
+2024-11-12 14:45:17,232 - INFO - Build log for devopscookbook-networking: ---> 3b871c8d2e32
+2024-11-12 14:45:17,232 - INFO - Build log for devopscookbook-networking: Step 3/8 : WORKDIR /scripts
+2024-11-12 14:45:17,233 - INFO - Build log for devopscookbook-networking: ---> Running in 08fce94c0322
+2024-11-12 14:45:17,233 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container 08fce94c0322
+2024-11-12 14:45:17,233 - INFO - Build log for devopscookbook-networking: ---> 6067b68c8732
+2024-11-12 14:45:17,234 - INFO - Build log for devopscookbook-networking: Step 4/8 : COPY ./*.sh /scripts/
+2024-11-12 14:45:17,234 - INFO - Build log for devopscookbook-networking: ---> c8e5a5ee8553
+2024-11-12 14:45:17,234 - INFO - Build log for devopscookbook-networking: Step 5/8 : RUN chmod +x /scripts/*.sh
+2024-11-12 14:45:17,234 - INFO - Build log for devopscookbook-networking: ---> Running in 62d84dd9036e
+2024-11-12 14:45:17,235 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container 62d84dd9036e
+2024-11-12 14:45:17,235 - INFO - Build log for devopscookbook-networking: ---> 1a0a585e7d44
+2024-11-12 14:45:17,235 - INFO - Build log for devopscookbook-networking: Step 6/8 : RUN mkdir -p /logs
+2024-11-12 14:45:17,235 - INFO - Build log for devopscookbook-networking: ---> Running in 762c31a16250
+2024-11-12 14:45:17,235 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container 762c31a16250
+2024-11-12 14:45:17,236 - INFO - Build log for devopscookbook-networking: ---> dd05d25c4845
+2024-11-12 14:45:17,236 - INFO - Build log for devopscookbook-networking: Step 7/8 : RUN echo '#!/bin/bash' > /scripts/run_all.sh &&     echo '/scripts/network_test.sh' >> /scripts/run_all.sh &&     echo '/scripts/show_active_connections.sh' >> /scripts/run_all.sh &&     echo '/scripts/show_network_config.sh' >> /scripts/run_all.sh &&     chmod +x /scripts/run_all.sh
+2024-11-12 14:45:17,236 - INFO - Build log for devopscookbook-networking: ---> Running in e8b9920aee73
+2024-11-12 14:45:17,236 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container e8b9920aee73
+2024-11-12 14:45:17,237 - INFO - Build log for devopscookbook-networking: ---> 5e333e547c6e
+2024-11-12 14:45:17,237 - INFO - Build log for devopscookbook-networking: Step 8/8 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 14:45:17,237 - INFO - Build log for devopscookbook-networking: ---> Running in 01d0939f7a7f
+2024-11-12 14:45:17,237 - INFO - Build log for devopscookbook-networking: ---> Removed intermediate container 01d0939f7a7f
+2024-11-12 14:45:17,238 - INFO - Build log for devopscookbook-networking: ---> 71a1c8a96eed
+2024-11-12 14:45:17,238 - INFO - Build log for devopscookbook-networking: Successfully built 71a1c8a96eed
+2024-11-12 14:45:17,238 - INFO - Build log for devopscookbook-networking: Successfully tagged devopscookbook-networking:latest
+2024-11-12 14:45:17,240 - INFO - Running container for image: devopscookbook-networking...
+2024-11-12 14:45:17,739 - INFO - Container started successfully for image: devopscookbook-networking
+2024-11-12 14:45:17,740 - INFO - Skipping non-directory: README.md
+2024-11-12 14:45:17,741 - INFO - Checking directory: SystemAdministration
+2024-11-12 14:45:17,742 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
+2024-11-12 14:45:17,743 - INFO - Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
+2024-11-12 14:45:19,711 - INFO - Successfully built Docker image: devopscookbook-systemadministration
+2024-11-12 14:45:19,712 - INFO - Build log for devopscookbook-systemadministration: Step 1/7 : FROM alpine:latest
+2024-11-12 14:45:19,712 - INFO - Build log for devopscookbook-systemadministration: ---> 63b790fccc90
+2024-11-12 14:45:19,712 - INFO - Build log for devopscookbook-systemadministration: Step 2/7 : RUN apk update && apk add bash
+2024-11-12 14:45:19,712 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 14:45:19,713 - INFO - Build log for devopscookbook-systemadministration: ---> 45f3a0a8a73e
+2024-11-12 14:45:19,713 - INFO - Build log for devopscookbook-systemadministration: Step 3/7 : WORKDIR /scripts
+2024-11-12 14:45:19,713 - INFO - Build log for devopscookbook-systemadministration: ---> Using cache
+2024-11-12 14:45:19,713 - INFO - Build log for devopscookbook-systemadministration: ---> a9c29f6f9773
+2024-11-12 14:45:19,713 - INFO - Build log for devopscookbook-systemadministration: Step 4/7 : COPY ./*.sh /scripts/
+2024-11-12 14:45:19,714 - INFO - Build log for devopscookbook-systemadministration: ---> 27852c27bb78
+2024-11-12 14:45:19,714 - INFO - Build log for devopscookbook-systemadministration: Step 5/7 : RUN chmod +x /scripts/*.sh
+2024-11-12 14:45:19,714 - INFO - Build log for devopscookbook-systemadministration: ---> Running in d11f472a6025
+2024-11-12 14:45:19,714 - INFO - Build log for devopscookbook-systemadministration: ---> Removed intermediate container d11f472a6025
+2024-11-12 14:45:19,714 - INFO - Build log for devopscookbook-systemadministration: ---> db8326fa902c
+2024-11-12 14:45:19,715 - INFO - Build log for devopscookbook-systemadministration: Step 6/7 : RUN mkdir -p /logs
+2024-11-12 14:45:19,715 - INFO - Build log for devopscookbook-systemadministration: ---> Running in 1a4634181a43
+2024-11-12 14:45:19,715 - INFO - Build log for devopscookbook-systemadministration: ---> Removed intermediate container 1a4634181a43
+2024-11-12 14:45:19,715 - INFO - Build log for devopscookbook-systemadministration: ---> a75c00ba38c5
+2024-11-12 14:45:19,715 - INFO - Build log for devopscookbook-systemadministration: Step 7/7 : CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+2024-11-12 14:45:19,716 - INFO - Build log for devopscookbook-systemadministration: ---> Running in 5a7c59d6aeae
+2024-11-12 14:45:19,716 - INFO - Build log for devopscookbook-systemadministration: ---> Removed intermediate container 5a7c59d6aeae
+2024-11-12 14:45:19,716 - INFO - Build log for devopscookbook-systemadministration: ---> a8652e68aa44
+2024-11-12 14:45:19,716 - INFO - Build log for devopscookbook-systemadministration: Successfully built a8652e68aa44
+2024-11-12 14:45:19,717 - INFO - Build log for devopscookbook-systemadministration: Successfully tagged devopscookbook-systemadministration:latest
+2024-11-12 14:45:19,718 - INFO - Running container for image: devopscookbook-systemadministration...
+2024-11-12 14:45:20,249 - INFO - Container started successfully for image: devopscookbook-systemadministration
+2024-11-12 14:45:20,250 - INFO - Checking directory: tests
+2024-11-12 14:45:20,251 - INFO - Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
+2024-11-12 14:45:20,252 - WARNING - No Dockerfile found in the 'tests' directory.
+2024-11-12 14:45:20,253 - INFO - Skipping non-directory: test_containers.log
+2024-11-12 14:45:20,254 - INFO - Docker Build and Run Results:
++-----------------------------------------------------+-------------------+
+|                     Image Name                      |   Build Status    |
++-----------------------------------------------------+-------------------+
+|                    .pytest_cache                    |   No Dockerfile   |
+| devopscookbook-automationandconfigurationmanagement | Built and Running |
+|                  DockerManagement                   |   No Dockerfile   |
+|                     DockerSetup                     |   No Dockerfile   |
+|          devopscookbook-linuxfundamentals           | Built and Running |
+|                        logs                         |   No Dockerfile   |
+|       devopscookbook-monitoringandperformance       | Built and Running |
+|              devopscookbook-networking              | Built and Running |
+|         devopscookbook-systemadministration         | Built and Running |
+|                        tests                        |   No Dockerfile   |
++-----------------------------------------------------+-------------------+
+2024-11-12 14:45:20,255 - INFO - Listing all running Docker containers:
+2024-11-12 14:45:20,268 - INFO - Running Docker Containers:
++---------------------------------------------------------------+--------------+---------+
+|                        Container Name                         |      ID      | Status  |
++---------------------------------------------------------------+--------------+---------+
+|         devopscookbook-systemadministration-container         | 24cabb0f00d3 | running |
+|              devopscookbook-networking-container              | 6785f50791d8 | running |
+|       devopscookbook-monitoringandperformance-container       | 0294ba3e388f | running |
+|          devopscookbook-linuxfundamentals-container           | 42f549b4491f | running |
+| devopscookbook-automationandconfigurationmanagement-container | c8ad0ece8ce6 | running |
++---------------------------------------------------------------+--------------+---------+

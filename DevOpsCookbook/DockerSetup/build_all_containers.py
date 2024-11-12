@@ -1,7 +1,18 @@
+#!/usr/bin/env python3
+# build_all_containers.py - Builds and runs all Docker containers for the project.
+
 import os
+import sys
+import argparse
 import docker
 import logging
 from tabulate import tabulate
+
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Build and run all Docker containers for the project.")
+parser.add_argument('--network', required=True, help='The Docker network to connect containers to.')
+args = parser.parse_args()
+network_name = args.network
 
 # Get the current directory of the script
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -44,6 +55,22 @@ def container_exists(container_name):
     except docker.errors.APIError as api_error:
         logging.error(f"Docker API error while checking container '{container_name}': {api_error}")
         return False
+
+# Function to ensure the container is connected to the network
+def ensure_container_in_network(container, network_name):
+    try:
+        network = client.networks.get(network_name)
+        container_networks = container.attrs['NetworkSettings']['Networks']
+        if network_name not in container_networks:
+            network.connect(container)
+            logging.info(f"Connected container '{container.name}' to network '{network_name}'.")
+            print(f"Connected container '{container.name}' to network '{network_name}'.")
+    except docker.errors.APIError as api_error:
+        logging.error(f"Docker API error while connecting container '{container.name}' to network '{network_name}': {api_error}")
+        print(f"Error connecting container '{container.name}' to network '{network_name}': {api_error}")
+    except Exception as e:
+        logging.error(f"Unexpected error while connecting container '{container.name}' to network '{network_name}': {e}")
+        print(f"Error connecting container '{container.name}' to network '{network_name}': {e}")
 
 # Get the base directory for the project
 BASE_DIR = project_root
@@ -96,6 +123,7 @@ for dir_name in os.listdir(BASE_DIR):
                     print(f"Container '{container_name}' already exists. Starting the existing container...")
                     logging.info(f"Container '{container_name}' already exists. Starting the existing container...")
                     container = client.containers.get(container_name)
+                    ensure_container_in_network(container, network_name)
                     container.start()
                     logging.info(f"Started existing container: {container_name}")
                     print(f"Started existing container: {container_name}")
@@ -108,6 +136,7 @@ for dir_name in os.listdir(BASE_DIR):
                         name=container_name,
                         detach=True,
                         tty=True,  # Allocate a pseudo-TTY
+                        network=network_name,
                         # Add other parameters as needed (ports, volumes, environment variables)
                     )
                     logging.info(f"Container started successfully for image: {image_name}")

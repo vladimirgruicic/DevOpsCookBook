@@ -8,6 +8,7 @@
 │           ├── nodeids
 │           └── stepwise
 ├── AutomationAndConfigurationManagement
+│   ├── Dockerfile
 │   ├── README.md
 │   ├── cron_job_setup.sh
 │   ├── install_salt.sh
@@ -38,6 +39,7 @@
 │   │   ├── README.md
 │   │   ├── nagios_setup.sh
 │   │   └── prometheus_setup.sh
+│   ├── Dockerfile
 │   ├── LogMonitoring
 │   │   ├── README.md
 │   │   ├── graylog_setup.sh
@@ -53,6 +55,7 @@
 │       ├── top_usage.sh
 │       └── vmstat_usage.sh
 ├── Networking
+│   ├── Dockerfile
 │   ├── README.md
 │   ├── network_test.sh
 │   ├── show_active_connections.sh
@@ -70,6 +73,7 @@
 │   ├── user_activity_report.sh
 │   └── user_and_group_management.sh
 ├── directory_structure.txt
+├── docker_troubleshoot_commands.sh
 ├── logs
 │   └── docker_management_logs
 ├── main_setup.sh
@@ -80,4 +84,4 @@
     │   └── test_build_containers.cpython-310-pytest-8.3.3.pyc
     └── test_build_containers.py
 
-18 directories, 62 files
+18 directories, 66 files

@@ -1,5 +1,5 @@
 #!/bin/bash
-# stop_and_remove_all_containers.sh - Stops and removes all Docker containers.
+# docker_cleanup.sh - Stops and removes all Docker containers.
 
 # Function to handle errors
 handle_error() {
@@ -9,16 +9,26 @@ handle_error() {
 
 # Stop all running containers
 echo "Stopping all running containers..."
-if ! docker stop $(docker ps -q); then
-    handle_error "Failed to stop containers."
+running_containers=$(docker ps -q)
+if [ -n "$running_containers" ]; then
+    if ! docker stop $running_containers; then
+        handle_error "Failed to stop containers."
+    fi
+    echo "All running containers have been stopped."
+else
+    echo "No running containers to stop."
 fi
-echo "All running containers have been stopped."
 
 # Remove all containers
 echo "Removing all containers..."
-if ! docker rm $(docker ps -a -q); then
-    handle_error "Failed to remove containers."
+all_containers=$(docker ps -a -q)
+if [ -n "$all_containers" ]; then
+    if ! docker rm $all_containers; then
+        handle_error "Failed to remove containers."
+    fi
+    echo "All containers have been removed."
+else
+    echo "No containers to remove."
 fi
-echo "All containers have been removed."
 
 echo "Script completed successfully."

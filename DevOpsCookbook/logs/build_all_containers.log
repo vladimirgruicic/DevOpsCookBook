@@ -5,7 +5,10 @@ Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/.pytest
 No Dockerfile found in the '.pytest_cache' directory.
 Checking directory: AutomationAndConfigurationManagement
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
-No Dockerfile found in the 'AutomationAndConfigurationManagement' directory.
+Building Docker image: devopscookbook-automationandconfigurationmanagement from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile...
+Successfully built Docker image: devopscookbook-automationandconfigurationmanagement
+Running container for image: devopscookbook-automationandconfigurationmanagement...
+Container started successfully for image: devopscookbook-automationandconfigurationmanagement
 Skipping non-directory: directory_structure.txt
 Checking directory: DockerManagement
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
@@ -13,6 +16,7 @@ No Dockerfile found in the 'DockerManagement' directory.
 Checking directory: DockerSetup
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerSetup/Dockerfile
 No Dockerfile found in the 'DockerSetup' directory.
+Skipping non-directory: docker_troubleshoot_commands.sh
 Checking directory: LinuxFundamentals
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
 Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
@@ -26,11 +30,17 @@ Skipping non-directory: main_setup.sh
 Skipping non-directory: make_scripts_executable.sh
 Checking directory: MonitoringAndPerformance
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
-No Dockerfile found in the 'MonitoringAndPerformance' directory.
+Building Docker image: devopscookbook-monitoringandperformance from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile...
+Successfully built Docker image: devopscookbook-monitoringandperformance
+Running container for image: devopscookbook-monitoringandperformance...
+Container started successfully for image: devopscookbook-monitoringandperformance
 Skipping non-directory: monitor_docker.py
 Checking directory: Networking
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
-No Dockerfile found in the 'Networking' directory.
+Building Docker image: devopscookbook-networking from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile...
+Successfully built Docker image: devopscookbook-networking
+Running container for image: devopscookbook-networking...
+Container started successfully for image: devopscookbook-networking
 Skipping non-directory: README.md
 Checking directory: SystemAdministration
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
@@ -44,25 +54,28 @@ No Dockerfile found in the 'tests' directory.
 Skipping non-directory: test_containers.log
 
 Docker Build and Run Results:
-+--------------------------------------+-------------------+
-|              Image Name              |   Build Status    |
-+--------------------------------------+-------------------+
-|            .pytest_cache             |   No Dockerfile   |
-| AutomationAndConfigurationManagement |   No Dockerfile   |
-|           DockerManagement           |   No Dockerfile   |
-|             DockerSetup              |   No Dockerfile   |
-|   devopscookbook-linuxfundamentals   | Built and Running |
-|                 logs                 |   No Dockerfile   |
-|       MonitoringAndPerformance       |   No Dockerfile   |
-|              Networking              |   No Dockerfile   |
-| devopscookbook-systemadministration  | Built and Running |
-|                tests                 |   No Dockerfile   |
-+--------------------------------------+-------------------+
++-----------------------------------------------------+-------------------+
+|                     Image Name                      |   Build Status    |
++-----------------------------------------------------+-------------------+
+|                    .pytest_cache                    |   No Dockerfile   |
+| devopscookbook-automationandconfigurationmanagement | Built and Running |
+|                  DockerManagement                   |   No Dockerfile   |
+|                     DockerSetup                     |   No Dockerfile   |
+|          devopscookbook-linuxfundamentals           | Built and Running |
+|                        logs                         |   No Dockerfile   |
+|       devopscookbook-monitoringandperformance       | Built and Running |
+|              devopscookbook-networking              | Built and Running |
+|         devopscookbook-systemadministration         | Built and Running |
+|                        tests                        |   No Dockerfile   |
++-----------------------------------------------------+-------------------+
 
 Listing all running Docker containers:
-+-----------------------------------------------+--------------+---------+
-|                Container Name                 |      ID      | Status  |
-+-----------------------------------------------+--------------+---------+
-| devopscookbook-systemadministration-container | aed1d8ad5d30 | running |
-|  devopscookbook-linuxfundamentals-container   | 9e65e3e48db6 | running |
-+-----------------------------------------------+--------------+---------+
++---------------------------------------------------------------+--------------+---------+
+|                        Container Name                         |      ID      | Status  |
++---------------------------------------------------------------+--------------+---------+
+|         devopscookbook-systemadministration-container         | 24cabb0f00d3 | running |
+|              devopscookbook-networking-container              | 6785f50791d8 | running |
+|       devopscookbook-monitoringandperformance-container       | 0294ba3e388f | running |
+|          devopscookbook-linuxfundamentals-container           | 42f549b4491f | running |
+| devopscookbook-automationandconfigurationmanagement-container | c8ad0ece8ce6 | running |
++---------------------------------------------------------------+--------------+---------+
