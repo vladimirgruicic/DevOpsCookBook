@@ -7,13 +7,15 @@ RUN apk update && apk add bash
 # Set the working directory in the container
 WORKDIR /scripts
 
+# Copy all shell scripts into the /scripts directory
 COPY ./*.sh /scripts/
 
 # Ensure all scripts are executable
 RUN chmod +x /scripts/*.sh
 
-# Set up log directory
+# Set up a log directory
 RUN mkdir -p /logs
 
-# Default command to run all scripts and keep the container alive
-CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+# Default command: start a bash session in interactive mode and log any output,
+# while keeping the container alive
+CMD tail -f /dev/null

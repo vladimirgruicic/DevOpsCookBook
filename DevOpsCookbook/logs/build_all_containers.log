@@ -73,9 +73,9 @@ Listing all running Docker containers:
 +---------------------------------------------------------------+--------------+---------+
 |                        Container Name                         |      ID      | Status  |
 +---------------------------------------------------------------+--------------+---------+
-|         devopscookbook-systemadministration-container         | 24cabb0f00d3 | running |
-|              devopscookbook-networking-container              | 6785f50791d8 | running |
-|       devopscookbook-monitoringandperformance-container       | 0294ba3e388f | running |
-|          devopscookbook-linuxfundamentals-container           | 42f549b4491f | running |
-| devopscookbook-automationandconfigurationmanagement-container | c8ad0ece8ce6 | running |
+|         devopscookbook-systemadministration-container         | 56b9a8ab11cf | running |
+|              devopscookbook-networking-container              | 9473b9d272dd | running |
+|       devopscookbook-monitoringandperformance-container       | 2390c75233a1 | running |
+|          devopscookbook-linuxfundamentals-container           | c4149104acc5 | running |
+| devopscookbook-automationandconfigurationmanagement-container | 89c4104ea039 | running |
 +---------------------------------------------------------------+--------------+---------+

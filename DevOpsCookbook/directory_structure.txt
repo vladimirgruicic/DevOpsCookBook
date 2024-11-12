@@ -29,11 +29,10 @@
 ├── LinuxFundamentals
 │   ├── Dockerfile
 │   ├── README.md
-│   ├── bash_scripting_basics.sh
-│   ├── basic_file_operations.sh
-│   ├── run_all.sh
-│   ├── set_permissions.sh
-│   └── text_processing.sh
+│   ├── bash_scripting_basics_manual.sh
+│   ├── basic_file_operations_manual.sh
+│   ├── set_permissions_manual.sh
+│   └── text_processing_manual.sh
 ├── MonitoringAndPerformance
 │   ├── ApplicationMonitoring
 │   │   ├── README.md
@@ -84,4 +83,4 @@
     │   └── test_build_containers.cpython-310-pytest-8.3.3.pyc
     └── test_build_containers.py
 
-18 directories, 66 files
+18 directories, 65 files
