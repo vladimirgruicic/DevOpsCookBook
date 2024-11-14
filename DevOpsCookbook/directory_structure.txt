@@ -5,6 +5,7 @@
 │   ├── README.md
 │   └── v
 │       └── cache
+│           ├── lastfailed
 │           ├── nodeids
 │           └── stepwise
 ├── AutomationAndConfigurationManagement
@@ -51,6 +52,7 @@
 │   └── SystemMonitoring
 │       ├── htop_usage.sh
 │       ├── iostat_usage.sh
+│       ├── system_logs.sh
 │       ├── top_usage.sh
 │       └── vmstat_usage.sh
 ├── Networking
@@ -63,15 +65,20 @@
 ├── SystemAdministration
 │   ├── Dockerfile
 │   ├── README.md
+│   ├── bulk_create_group.sh
+│   ├── bulk_create_user.sh
+│   ├── check_setup.sh
 │   ├── create_group.sh
+│   ├── create_project_structure.sh
 │   ├── create_user.sh
 │   ├── group_list.txt
+│   ├── main_setup.sh
 │   ├── managing_processes.sh
 │   ├── package_management.sh
-│   ├── system_logs.sh
-│   ├── user_activity_report.sh
-│   ├── user_and_group_management.sh
-│   └── user_list.csv
+│   ├── package_management_manual.sh
+│   ├── packages.txt
+│   ├── set_project_permissions.sh
+│   └── user_list.txt
 ├── directory_structure.txt
 ├── docker_troubleshoot_commands.sh
 ├── logs
@@ -84,4 +91,4 @@
     │   └── test_build_containers.cpython-310-pytest-8.3.3.pyc
     └── test_build_containers.py
 
-18 directories, 66 files
+18 directories, 73 files

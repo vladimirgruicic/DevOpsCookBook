@@ -185,3 +185,1095 @@ collected 1 item
 tests/test_build_containers.py .                                         [100%]
 
 ============================== 1 passed in 0.28s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.35s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.32s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.36s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.32s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.35s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.34s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.33s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py F                                         [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_all_images_and_containers_exist _____________________
+
+    def test_all_images_and_containers_exist():
+        logging.info("Starting test: Checking if all images and containers exist...")
+    
+        # Get the list of expected images and containers
+        expected_images_and_containers = get_expected_images_and_containers()
+    
+        # Assert if all expected images exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if image exists: {image_name}")
+            if not image_exists(image_name):
+                log_error(f"Image {image_name} does not exist")
+                pytest.fail(f"Image {image_name} does not exist")
+    
+        # Assert if all expected containers exist
+        for image_name, container_name in expected_images_and_containers:
+            logging.info(f"Checking if container exists: {container_name}")
+            if not container_exists(container_name):
+                log_error(f"Container {container_name} does not exist")
+>               pytest.fail(f"Container {container_name} does not exist")
+E               Failed: Container devopscookbook-automationandconfigurationmanagement-container does not exist
+
+tests/test_build_containers.py:84: Failed
+----------------------------- Captured stdout call -----------------------------
+Container devopscookbook-automationandconfigurationmanagement-container does not exist
+------------------------------ Captured log call -------------------------------
+ERROR    root:test_build_containers.py:29 Container devopscookbook-automationandconfigurationmanagement-container does not exist
+=========================== short test summary info ============================
+FAILED tests/test_build_containers.py::test_all_images_and_containers_exist
+============================== 1 failed in 0.35s ===============================
