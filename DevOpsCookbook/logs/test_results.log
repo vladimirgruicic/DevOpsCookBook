@@ -177,3 +177,11 @@ collected 1 item
 tests/test_build_containers.py .                                         [100%]
 
 ============================== 1 passed in 0.29s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.3, pluggy-1.5.0
+rootdir: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook
+collected 1 item
+
+tests/test_build_containers.py .                                         [100%]
+
+============================== 1 passed in 0.28s ===============================

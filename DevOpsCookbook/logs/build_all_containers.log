@@ -39,7 +39,9 @@ Skipping non-directory: README.md
 Checking directory: SystemAdministration
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
 Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
-Error: Failed to build Docker image: devopscookbook-systemadministration. Error: The command '/bin/sh -c apk update && apk add bash' returned a non-zero code: 127
+Successfully built Docker image: devopscookbook-systemadministration
+Container 'devopscookbook-systemadministration-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-systemadministration-container
 Checking directory: tests
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
 No Dockerfile found in the 'tests' directory.
@@ -57,13 +59,14 @@ Docker Build and Run Results:
 |                        logs                         |   No Dockerfile   |
 |       devopscookbook-monitoringandperformance       |   Build Failed    |
 |              devopscookbook-networking              |   Build Failed    |
-|         devopscookbook-systemadministration         |   Build Failed    |
+|         devopscookbook-systemadministration         | Built and Running |
 |                        tests                        |   No Dockerfile   |
 +-----------------------------------------------------+-------------------+
 
 Listing all running Docker containers:
-+--------------------------------------------+--------------+---------+
-|               Container Name               |      ID      | Status  |
-+--------------------------------------------+--------------+---------+
-| devopscookbook-linuxfundamentals-container | c4149104acc5 | running |
-+--------------------------------------------+--------------+---------+
++-----------------------------------------------+--------------+---------+
+|                Container Name                 |      ID      | Status  |
++-----------------------------------------------+--------------+---------+
+| devopscookbook-systemadministration-container | 56b9a8ab11cf | running |
+|  devopscookbook-linuxfundamentals-container   | c4149104acc5 | running |
++-----------------------------------------------+--------------+---------+

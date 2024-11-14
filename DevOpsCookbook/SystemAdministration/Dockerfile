@@ -2,18 +2,19 @@
 FROM ubuntu:latest
 
 # Install bash (if needed) and any other dependencies
-RUN apk update && apk add bash
+RUN apt-get update && apt-get install -y bash
 
 # Set the working directory in the container
 WORKDIR /scripts
 
+# Copy all shell scripts into the /scripts directory
 COPY ./*.sh /scripts/
 
 # Ensure all scripts are executable
 RUN chmod +x /scripts/*.sh
 
-# Set up log directory
+# Set up a log directory
 RUN mkdir -p /logs
 
-# Default command to run all scripts and keep the container alive
-CMD bash /scripts/run_all.sh >> /logs/docker_container_logs.txt 2>&1 && tail -f /logs/docker_container_logs.txt
+# Default command: keep the container running and log output
+CMD tail -f /dev/null
