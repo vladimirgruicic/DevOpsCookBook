@@ -1,5 +1,5 @@
 # Start with a lightweight Linux image
-FROM alpine:latest
+FROM ubuntu:latest
 
 # Install bash and any necessary dependencies
 RUN apk update && apk add --no-cache bash sysstat procps

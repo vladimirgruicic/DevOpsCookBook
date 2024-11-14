@@ -32,7 +32,7 @@ echo "Ownership changed to 'devuser:devteam'."
 # - Others have read and execute (5)
 # The result is 755 permissions
 echo "Setting permissions for '/home/devuser/dev_files' to 755..."
-sudo chmod 755 /home/devuser/dev_files
+chmod 755 /home/devuser/dev_files
 echo "Permissions set to 755 (rwxr-xr-x)."
 
 # ========================================

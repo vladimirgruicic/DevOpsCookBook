@@ -45,7 +45,7 @@ fi
 # Use a for loop to print a message 5 times
 echo "### Loops ###"
 for i in {1..5}; do
-    echo "Loop iteration: $i"  # Output: Loop iteration: 1, 2, ..., 5
+    echo "Loop iteration: $i"  
 done
 
 # ========================================

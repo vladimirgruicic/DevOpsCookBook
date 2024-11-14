@@ -6,9 +6,7 @@ No Dockerfile found in the '.pytest_cache' directory.
 Checking directory: AutomationAndConfigurationManagement
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile
 Building Docker image: devopscookbook-automationandconfigurationmanagement from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/AutomationAndConfigurationManagement/Dockerfile...
-Successfully built Docker image: devopscookbook-automationandconfigurationmanagement
-Running container for image: devopscookbook-automationandconfigurationmanagement...
-Container started successfully for image: devopscookbook-automationandconfigurationmanagement
+Error: Failed to build Docker image: devopscookbook-automationandconfigurationmanagement. Error: The command '/bin/sh -c apk update && apk add --no-cache bash' returned a non-zero code: 127
 Skipping non-directory: directory_structure.txt
 Checking directory: DockerManagement
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/DockerManagement/Dockerfile
@@ -21,8 +19,8 @@ Checking directory: LinuxFundamentals
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile
 Building Docker image: devopscookbook-linuxfundamentals from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/LinuxFundamentals/Dockerfile...
 Successfully built Docker image: devopscookbook-linuxfundamentals
-Running container for image: devopscookbook-linuxfundamentals...
-Container started successfully for image: devopscookbook-linuxfundamentals
+Container 'devopscookbook-linuxfundamentals-container' already exists. Starting the existing container...
+Started existing container: devopscookbook-linuxfundamentals-container
 Checking directory: logs
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/logs/Dockerfile
 No Dockerfile found in the 'logs' directory.
@@ -31,23 +29,17 @@ Skipping non-directory: make_scripts_executable.sh
 Checking directory: MonitoringAndPerformance
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile
 Building Docker image: devopscookbook-monitoringandperformance from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/MonitoringAndPerformance/Dockerfile...
-Successfully built Docker image: devopscookbook-monitoringandperformance
-Running container for image: devopscookbook-monitoringandperformance...
-Container started successfully for image: devopscookbook-monitoringandperformance
+Error: Failed to build Docker image: devopscookbook-monitoringandperformance. Error: The command '/bin/sh -c apk update && apk add --no-cache bash sysstat procps' returned a non-zero code: 127
 Skipping non-directory: monitor_docker.py
 Checking directory: Networking
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile
 Building Docker image: devopscookbook-networking from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/Networking/Dockerfile...
-Successfully built Docker image: devopscookbook-networking
-Running container for image: devopscookbook-networking...
-Container started successfully for image: devopscookbook-networking
+Error: Failed to build Docker image: devopscookbook-networking. Error: The command '/bin/sh -c apk update && apk add --no-cache bash iproute2 net-tools iputils bind-tools' returned a non-zero code: 127
 Skipping non-directory: README.md
 Checking directory: SystemAdministration
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile
 Building Docker image: devopscookbook-systemadministration from /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/SystemAdministration/Dockerfile...
-Successfully built Docker image: devopscookbook-systemadministration
-Running container for image: devopscookbook-systemadministration...
-Container started successfully for image: devopscookbook-systemadministration
+Error: Failed to build Docker image: devopscookbook-systemadministration. Error: The command '/bin/sh -c apk update && apk add bash' returned a non-zero code: 127
 Checking directory: tests
 Looking for Dockerfile at: /mnt/d/Projects/DevOpsCookBook/DevOpsCookbook/tests/Dockerfile
 No Dockerfile found in the 'tests' directory.
@@ -58,24 +50,20 @@ Docker Build and Run Results:
 |                     Image Name                      |   Build Status    |
 +-----------------------------------------------------+-------------------+
 |                    .pytest_cache                    |   No Dockerfile   |
-| devopscookbook-automationandconfigurationmanagement | Built and Running |
+| devopscookbook-automationandconfigurationmanagement |   Build Failed    |
 |                  DockerManagement                   |   No Dockerfile   |
 |                     DockerSetup                     |   No Dockerfile   |
 |          devopscookbook-linuxfundamentals           | Built and Running |
 |                        logs                         |   No Dockerfile   |
-|       devopscookbook-monitoringandperformance       | Built and Running |
-|              devopscookbook-networking              | Built and Running |
-|         devopscookbook-systemadministration         | Built and Running |
+|       devopscookbook-monitoringandperformance       |   Build Failed    |
+|              devopscookbook-networking              |   Build Failed    |
+|         devopscookbook-systemadministration         |   Build Failed    |
 |                        tests                        |   No Dockerfile   |
 +-----------------------------------------------------+-------------------+
 
 Listing all running Docker containers:
-+---------------------------------------------------------------+--------------+---------+
-|                        Container Name                         |      ID      | Status  |
-+---------------------------------------------------------------+--------------+---------+
-|         devopscookbook-systemadministration-container         | 56b9a8ab11cf | running |
-|              devopscookbook-networking-container              | 9473b9d272dd | running |
-|       devopscookbook-monitoringandperformance-container       | 2390c75233a1 | running |
-|          devopscookbook-linuxfundamentals-container           | c4149104acc5 | running |
-| devopscookbook-automationandconfigurationmanagement-container | 89c4104ea039 | running |
-+---------------------------------------------------------------+--------------+---------+
++--------------------------------------------+--------------+---------+
+|               Container Name               |      ID      | Status  |
++--------------------------------------------+--------------+---------+
+| devopscookbook-linuxfundamentals-container | c4149104acc5 | running |
++--------------------------------------------+--------------+---------+

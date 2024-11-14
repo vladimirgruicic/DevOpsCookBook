@@ -1,5 +1,5 @@
 # Start with a lightweight Linux image
-FROM alpine:latest
+FROM ubuntu:latest
 
 # Install bash and networking tools
 RUN apk update && apk add --no-cache bash iproute2 net-tools iputils bind-tools

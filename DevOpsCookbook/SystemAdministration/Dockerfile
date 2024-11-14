@@ -1,5 +1,5 @@
 # Start with a lightweight Linux image
-FROM alpine:latest
+FROM ubuntu:latest
 
 # Install bash (if needed) and any other dependencies
 RUN apk update && apk add bash
